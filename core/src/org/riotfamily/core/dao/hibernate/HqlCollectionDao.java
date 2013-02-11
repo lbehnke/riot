@@ -105,7 +105,7 @@ public class HqlCollectionDao extends AbstractHqlDao implements
 			entityClass = PropertyUtils.getCollectionPropertyType(parentClass, collectionProperty);
 		}
 		if (parentClass == null) {
-			Assert.notNull(parentProperty, "Eiter paretnClass or parentProperty must be set");
+			Assert.notNull(parentProperty, "Either parentClass or parentProperty must be set");
 			parentClass = PropertyUtils.getPropertyType(entityClass, parentProperty);
 		}
 	}
