@@ -101,7 +101,7 @@ public class HqlCollectionDao extends AbstractHqlDao implements
 	protected void initDao() throws Exception {
 		Assert.notNull(collectionProperty, "The collectionProperty must be set");
 		if (entityClass == null) {
-			Assert.notNull(parentClass, "Eiter entityClass or parentClass must be set");
+			Assert.notNull(parentClass, "Either entityClass or parentClass must be set");
 			entityClass = PropertyUtils.getCollectionPropertyType(parentClass, collectionProperty);
 		}
 		if (parentClass == null) {
