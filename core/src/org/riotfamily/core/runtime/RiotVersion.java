@@ -26,6 +26,9 @@ public final class RiotVersion {
 	public static String getVersionString() {
 		if (versionString == null) {
 			versionString = RiotRuntime.class.getPackage().getImplementationVersion();
+			if (versionString == null) {
+			    versionString = "dev";
+			}
 		}
 		return versionString;
 	}
