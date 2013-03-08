@@ -30,7 +30,7 @@ libraries = [
 	apache_poi: 'org.apache.poi:poi:3.5-FINAL'
 ] + modules('lucene', 'org.apache.lucene:lucene-$name:2.4.1', 
 		  'core', 'highlighter', 'analyzers', 'snowball') + 
-	modules('spring', 'org.springframework:spring-$name:3.0.5.RELEASE',
+	modules('spring', 'org.springframework:spring-$name:3.1.0.RELEASE',
 		  'core', 'expression', 'beans', 'aop', 'context', 'context-support',
 		  'tx', 'jdbc', 'orm', 'oxm', 'web', 'webmvc', 'test');
 
@@ -47,7 +47,7 @@ dependsOnChildren()
 
 allprojects {
 	group = 'org.riotfamily'
-	version = '9.1.0'
+	version = '9.1.0.OSGI'
 	repositories {
 		mavenRepo url: 'http://repository.riotfamily.org/external'
 		mavenRepo url: 'http://repository.riotfamily.org/cache'
@@ -66,8 +66,8 @@ subprojects {
 	
 	release.dependsOn(uploadArchives)
 	
-	sourceCompatibility = 1.5
-	targetCompatibility = 1.5
+	sourceCompatibility = 1.7
+	targetCompatibility = 1.7
 	
 	configurations.compile.transitive = true
 	configurations.testCompile.transitive = true

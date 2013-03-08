@@ -25,6 +25,8 @@ import org.riotfamily.forms.resource.ScriptResource;
 import org.springframework.beans.propertyeditors.CustomNumberEditor;
 import org.springframework.util.Assert;
 
+import com.sun.corba.se.spi.legacy.connection.GetEndPointInfoAgainException;
+
 public class NumberField extends TextField implements DHTMLElement,
 		ResourceElement {
 
@@ -155,7 +157,8 @@ public class NumberField extends TextField implements DHTMLElement,
 	       
 	@Override
 	protected void afterFormContextSet() {
-		Class<?> type = getEditorBinding().getPropertyType();
+		
+		Class<? extends Number> type = (Class<Number>)getEditorBinding().getPropertyType();
 		if (type == null || Object.class.equals(type)) {
 			// Use BigDecimal for untyped properties 
 			type = BigDecimal.class;
