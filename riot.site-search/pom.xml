@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>riot.sitesearch</artifactId>
+	<packaging>jar</packaging>
+	<name>Riot Site Search</name>
+	<parent>
+		<groupId>org.riotfamily</groupId>
+		<artifactId>riot.parent</artifactId>
+		<version>9.1.0.OSGI</version>
+		<relativePath>../riot.parent</relativePath>
+	</parent>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.riotfamily</groupId>
+			<artifactId>riot.search</artifactId>
+			<version>${pom.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.riotfamily</groupId>
+			<artifactId>riot.content</artifactId>
+			<version>${pom.version}</version>
+		</dependency>
+				
+	</dependencies>
+
+	<build>
+		<sourceDirectory>${project.basedir}/src</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>${project.basedir}/src</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+			<resource>
+				<directory>${project.basedir}</directory>
+				<includes>
+					<include>META-INF/**</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
+
+</project>

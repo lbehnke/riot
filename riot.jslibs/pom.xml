@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>riot.jslibs</artifactId>
+	<packaging>jar</packaging>
+	<name>Riot JSLib</name>
+	<parent>
+		<groupId>org.riotfamily</groupId>
+		<artifactId>riot.parent</artifactId>
+		<version>9.1.0.OSGI</version>
+		<relativePath>../riot.parent</relativePath>
+	</parent>
+	
+	<build>
+		<sourceDirectory>${project.basedir}/src</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>${project.basedir}/src</directory>
+			</resource>
+		</resources>
+	</build>	
+</project>
