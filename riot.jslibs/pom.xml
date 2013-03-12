@@ -11,12 +11,4 @@
 		<relativePath>../riot.parent</relativePath>
 	</parent>
 	
-	<build>
-		<sourceDirectory>${project.basedir}/src</sourceDirectory>
-		<resources>
-			<resource>
-				<directory>${project.basedir}/src</directory>
-			</resource>
-		</resources>
-	</build>	
 </project>

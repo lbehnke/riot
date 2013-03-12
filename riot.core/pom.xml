@@ -70,24 +70,20 @@
 			<artifactId>hsqldb</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.junit</groupId>
+			<artifactId>com.springsource.org.junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.test</artifactId>
+			<scope>test</scope>
+		</dependency>
+				
 	</dependencies>
 	
-	<build>
-		<sourceDirectory>${project.basedir}/src</sourceDirectory>
-		<resources>
-			<resource>
-				<directory>${project.basedir}/src</directory>
-				<excludes>
-					<exclude>**/*.java</exclude>
-				</excludes>
-			</resource>
-			<resource>
-				<directory>${project.basedir}</directory>
-				<includes>
-					<include>META-INF/**</include>
-				</includes>
-			</resource>
-		</resources>
-	</build>	
 	
 </project>

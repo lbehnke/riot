@@ -1,1 +1,0 @@
-include 'riot.cachius', 'riot.revolt', 'riot.common', 'riot.forms', 'riot.core', 'riot.media', 'riot.content', 'riot.dbmsgsrc', 'riot.statistics', 'riot.jslibs', 'riot.crawler', 'riot.search', 'riot.site-search', 'riot.linkcheck'

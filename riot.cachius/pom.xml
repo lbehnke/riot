@@ -24,16 +24,4 @@
 		</dependency>
 	</dependencies>
 	
-	<build>
-		<sourceDirectory>${project.basedir}/src</sourceDirectory>
-	    <resources>
-	    	<resource>
-	    		<directory>${project.basedir}/src</directory>
-	    		<excludes>
-	    			<exclude>**/*.java</exclude>
-	    		</excludes>
-	    	</resource>
-	    </resources>
-	</build>
-	
 </project>

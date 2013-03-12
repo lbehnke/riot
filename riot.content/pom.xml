@@ -61,24 +61,8 @@
 			<artifactId>c3p0</artifactId>
 			<scope>runtime</scope>			
 		</dependency>
+				
 	</dependencies>
 	
-	<build>
-		<sourceDirectory>${project.basedir}/src</sourceDirectory>
-		<resources>
-			<resource>
-				<directory>${project.basedir}/src</directory>
-				<excludes>
-					<exclude>**/*.java</exclude>
-				</excludes>
-			</resource>
-			<resource>
-				<directory>${project.basedir}</directory>
-				<includes>
-					<include>META-INF/**</include>
-				</includes>
-			</resource>
-		</resources>
-	</build>	
 	
 </project>
