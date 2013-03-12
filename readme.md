@@ -8,7 +8,10 @@ For more information please visit the project homepage at:
 
 The Branch 9.1.x.OSGi is based on riot 9.1.x and contains some adaptations required for deploying Riot on the Virgo 3.6 OSGi application server in an Java 7 environment.
 
+The project is built with Maven2:
 
+    $ cd riot.parent
+    $ mvn clean install
 
 
 
