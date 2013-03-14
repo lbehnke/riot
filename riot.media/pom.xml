@@ -13,25 +13,25 @@
 
 	<dependencies>
 
-		<dependency>
-			<groupId>org.riotfamily</groupId>
-			<artifactId>riot.core</artifactId>
-			<version>${pom.version}</version>
-			<scope>compile</scope>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.riotfamily</groupId> -->
+<!-- 			<artifactId>riot.core</artifactId> -->
+<!-- 			<version>${pom.version}</version> -->
+<!-- 			<scope>compile</scope> -->
+<!-- 		</dependency> -->
 		
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<scope>provided</scope>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>javax.servlet</groupId> -->
+<!-- 			<artifactId>servlet-api</artifactId> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
 
-		<dependency>
-			<groupId>net.sf.json-lib</groupId>
-			<artifactId>json-lib</artifactId>
-			<scope>compile</scope>
-			<classifier>jdk15</classifier>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>net.sf.json-lib</groupId> -->
+<!-- 			<artifactId>json-lib</artifactId> -->
+<!-- 			<scope>compile</scope> -->
+<!-- 			<classifier>jdk15</classifier> -->
+<!-- 		</dependency> -->
 		
 	</dependencies>
 	

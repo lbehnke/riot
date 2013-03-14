@@ -14,7 +14,9 @@ import java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock;
  * last time.
  */
 public class CacheEntry implements Serializable, Comparable<CacheEntry> {
-	
+
+	private static final long serialVersionUID = 1L;
+
 	/** The key used for lookups */
     private String key;
     

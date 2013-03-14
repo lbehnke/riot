@@ -13,19 +13,19 @@
 
 	<dependencies>
 
-		<dependency>
-			<groupId>org.riotfamily</groupId>
-			<artifactId>riot.core</artifactId>
-			<version>${pom.version}</version>
-			<scope>compile</scope>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.riotfamily</groupId> -->
+<!-- 			<artifactId>riot.core</artifactId> -->
+<!-- 			<version>${pom.version}</version> -->
+<!-- 			<scope>compile</scope> -->
+<!-- 		</dependency> -->
 		
-		<dependency>
-			<groupId>org.riotfamily</groupId>
-			<artifactId>riot.crawler</artifactId>
-			<version>${pom.version}</version>
-			<scope>compile</scope>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.riotfamily</groupId> -->
+<!-- 			<artifactId>riot.crawler</artifactId> -->
+<!-- 			<version>${pom.version}</version> -->
+<!-- 			<scope>compile</scope> -->
+<!-- 		</dependency> -->
 		
 	</dependencies>
 	

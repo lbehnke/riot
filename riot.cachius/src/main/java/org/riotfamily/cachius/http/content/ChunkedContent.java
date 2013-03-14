@@ -20,6 +20,8 @@ import org.riotfamily.cachius.http.support.IOUtils;
 
 public class ChunkedContent implements Content {
 
+	private static final long serialVersionUID = 1L;
+
 	private File file;
 	
 	private List<Chunk> chunks = new LinkedList<Chunk>();
@@ -84,6 +86,8 @@ public class ChunkedContent implements Content {
 			
 	private static class Chunk implements Serializable {
 
+		private static final long serialVersionUID = 1L;
+
 		protected int length;
 		
 		public Chunk(int length) {
@@ -102,6 +106,8 @@ public class ChunkedContent implements Content {
 	}
 	
 	private class FragmentChunk extends Chunk {
+
+		private static final long serialVersionUID = 1L;
 
 		private ContentFragment fragment;
 		

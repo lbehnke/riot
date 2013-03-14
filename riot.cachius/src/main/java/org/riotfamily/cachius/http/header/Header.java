@@ -14,11 +14,12 @@ package org.riotfamily.cachius.http.header;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collection;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-class Header implements Serializable {
+public class Header implements Serializable {
 	
 	private static final long serialVersionUID = -4213831361339746664L;
 
@@ -53,5 +54,22 @@ class Header implements Serializable {
 			response.addHeader(name, value.resolve(request));	
 		}
 	}
+
+	public String getStringValue() {
+		return value != null ? value.toString() : "";
+	}
 	
+	public Collection<String> getStringValues() {
+		Collection<String> values = new ArrayList<String>();
+		if (value != null) {
+			values.add(value.toString());
+		}
+		for (HeaderValue value : additionalValues) {
+			if (value != null) {
+				values.add(value.toString());
+			}
+		}
+		return values;
+	}
+
 }

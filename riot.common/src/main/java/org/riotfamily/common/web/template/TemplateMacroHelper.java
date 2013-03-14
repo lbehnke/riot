@@ -67,8 +67,7 @@ public class TemplateMacroHelper {
 	
 	public class RootDirective implements TemplateDirectiveModel {
 	
-		@SuppressWarnings("unchecked")
-		public void execute(Environment env, Map params, TemplateModel[] loopVars,
+		public void execute(Environment env, @SuppressWarnings("rawtypes") Map params, TemplateModel[] loopVars,
 				TemplateDirectiveBody body) throws TemplateException, IOException {
 			
 			TemplateDefinition root = new TemplateDefinition(body, env);			
@@ -86,7 +85,7 @@ public class TemplateMacroHelper {
 	
 	public class ExtendDirective implements TemplateDirectiveModel {
 		
-		@SuppressWarnings("unchecked")
+		@SuppressWarnings({ "unchecked", "rawtypes" })
 		public void execute(Environment env, Map params, TemplateModel[] loopVars,
 				TemplateDirectiveBody body) throws TemplateException, IOException {
 		
@@ -100,6 +99,7 @@ public class TemplateMacroHelper {
 			
 			if (deepest) {
 				// Template was not extended
+				@SuppressWarnings("resource")
 				Writer out = new NullWriter();
 				// Go from deepest up to root template
 				Iterator<TemplateDefinition> it = definitions.iterator();
@@ -131,7 +131,7 @@ public class TemplateMacroHelper {
 	
 	public class BlockDirective implements TemplateDirectiveModel {
 		
-		@SuppressWarnings("unchecked")
+		@SuppressWarnings({"unchecked", "rawtypes"})
 		public void execute(Environment env, Map params, TemplateModel[] loopVars,
 				TemplateDirectiveBody body) throws TemplateException, IOException {
 			

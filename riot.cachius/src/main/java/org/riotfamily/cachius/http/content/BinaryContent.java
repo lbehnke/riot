@@ -12,6 +12,8 @@ import org.riotfamily.cachius.http.support.IOUtils;
 
 public class BinaryContent implements Content {
 
+	private static final long serialVersionUID = 1L;
+	
 	private File file;
 	
 	public BinaryContent(File file) {

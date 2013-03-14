@@ -19,6 +19,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.util.Collection;
 import java.util.Locale;
 
 import javax.servlet.ServletOutputStream;
@@ -31,12 +32,13 @@ import org.riotfamily.cachius.http.content.ChunkedContent;
 import org.riotfamily.cachius.http.content.ContentFragment;
 import org.riotfamily.cachius.http.content.Directives;
 import org.riotfamily.cachius.http.content.GzipContent;
+import org.riotfamily.cachius.http.header.Header;
 import org.riotfamily.cachius.http.header.SessionIdCookie;
 import org.riotfamily.cachius.http.header.StaticCookie;
 import org.riotfamily.cachius.http.support.DelegatingServletOutputStream;
 import org.riotfamily.cachius.http.support.ScanWriter;
-import org.riotfamily.cachius.http.support.SessionIdEncoder;
 import org.riotfamily.cachius.http.support.ScanWriter.Block;
+import org.riotfamily.cachius.http.support.SessionIdEncoder;
 import org.riotfamily.cachius.persistence.DiskStore;
 
 
@@ -146,7 +148,25 @@ public class CachiusResponse implements HttpServletResponse {
     public void setHeader(String name, String value) {
     	data.getHeaders().set(name, value);
     }
+    
+	@Override
+	public String getHeader(String name) {
+		Header header = data.getHeaders().getHeader(name);
+		if (header != null) {
+			header.getStringValue();
+		}
+		return null;
+	}
 
+	@Override
+	public Collection<String> getHeaders(String name) {
+		return data.getHeaders().getHeader(name).getStringValues();
+	}
+
+	public Collection<String> getHeaderNames() {
+		return data.getHeaders().getHeaderNames();
+	}
+	
     public void addCookie(Cookie cookie) {
     	if (sessionIdEncoder.isSessionIdCookie(cookie)) {
     		data.getCookies().add(new SessionIdCookie(cookie));
@@ -328,5 +348,10 @@ public class CachiusResponse implements HttpServletResponse {
 		writer = null;
 		outputStream = null;
 	}
+
+
+
+
+
 
 }

@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Export-Package: org.riotfamily.linkcheck;uses:="javax.persistence,org.
+ apache.commons.httpclient.methods,org.directwebremoting.annotations,o
+ rg.hibernate,org.hibernate.annotations,org.riotfamily.common.hibernat
+ e,org.riotfamily.core.dao.hibernate,org.riotfamily.core.screen,org.ri
+ otfamily.core.screen.list.command,org.riotfamily.core.screen.list.com
+ mand.impl.support,org.riotfamily.crawler,org.springframework.dao,org.
+ springframework.transaction.annotation",org.riotfamily.linkcheck.runt
+ ime.resources,org.riotfamily.linkcheck.runtime.resources.style,org.ri
+ otfamily.linkcheck.runtime.resources.style.icons.editors,org.riotfami
+ ly.linkcheck.runtime.resources.style.images
+Tool: Bundlor 1.1.2.RELEASE
+Import-Package: javax.persistence,org.apache.commons.httpclient,org.ap
+ ache.commons.httpclient.methods,org.apache.commons.httpclient.params,
+ org.directwebremoting.annotations,org.hibernate,org.hibernate.annotat
+ ions,org.riotfamily.common.beans.property,org.riotfamily.common.hiber
+ nate,org.riotfamily.common.util,org.riotfamily.common.web.support,org
+ .riotfamily.core.dao.hibernate,org.riotfamily.core.resource,org.riotf
+ amily.core.screen,org.riotfamily.core.screen.list.command,org.riotfam
+ ily.core.screen.list.command.impl.support,org.riotfamily.core.screen.
+ list.command.result,org.riotfamily.crawler,org.slf4j,org.springframew
+ ork.dao,org.springframework.transaction.annotation,org.springframewor
+ k.util
+

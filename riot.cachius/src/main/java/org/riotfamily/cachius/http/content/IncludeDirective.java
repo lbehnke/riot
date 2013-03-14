@@ -21,7 +21,8 @@ public class IncludeDirective implements Directive {
 	}
 	
 	private static class IncludeFragment implements ContentFragment {
-		
+
+		private static final long serialVersionUID = 1L;
 		private String url;
 	
 		public IncludeFragment(String url) {

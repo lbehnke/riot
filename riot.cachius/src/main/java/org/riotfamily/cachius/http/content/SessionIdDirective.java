@@ -9,6 +9,8 @@ import javax.servlet.http.HttpSession;
 
 public class SessionIdDirective implements Directive, ContentFragment {
 
+	private static final long serialVersionUID = 1L;
+	
 	private static final String ATTRIBUTE_NAME = SessionIdDirective.class.getName();
 
 	public ContentFragment parse(String expression) {

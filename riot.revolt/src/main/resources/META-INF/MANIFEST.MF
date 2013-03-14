@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Export-Package: org.riotfamily.revolt;version="9.1.0.OSGI";uses:="java
+ x.sql,org.riotfamily.revolt.definition,org.riotfamily.revolt.support,
+ org.springframework.beans.factory,org.springframework.beans.factory.a
+ nnotation,org.springframework.context,org.springframework.jdbc.core.s
+ imple,org.springframework.transaction,org.springframework.transaction
+ .support",org.riotfamily.revolt.config;version="9.1.0.OSGI";uses:="or
+ g.springframework.beans.factory.config,org.springframework.beans.fact
+ ory.xml,org.w3c.dom",org.riotfamily.revolt.definition;version="9.1.0.
+ OSGI";uses:="org.riotfamily.revolt",org.riotfamily.revolt.dialect;ver
+ sion="9.1.0.OSGI";uses:="org.riotfamily.revolt,org.riotfamily.revolt.
+ definition",org.riotfamily.revolt.refactor;version="9.1.0.OSGI";uses:
+ ="org.riotfamily.revolt,org.riotfamily.revolt.definition,org.springfr
+ amework.jdbc.core.simple",org.riotfamily.revolt.support;version="9.1.
+ 0.OSGI";uses:="javax.sql,org.riotfamily.revolt,org.riotfamily.revolt.
+ definition,org.springframework.dao,org.springframework.jdbc.core,org.
+ springframework.jdbc.core.simple"
+Bundle-Vendor: riotfamily.org
+Bundle-ClassPath: .
+Bundle-Version: 9.1.0.OSGI
+Tool: Bundlor 1.1.2.RELEASE
+Import-Library: org.springframework.spring;version="[3.1, 3.2)"
+Bundle-Name: Riot Revolt Bundle
+Bundle-ManifestVersion: 2
+Import-Package: javax.sql;version="0.0.0",org.slf4j;version="[1.6.1,1.
+ 7.0)",org.springframework.beans;version="[3.1.0,3.2.0)",org.springfra
+ mework.beans.factory;version="[3.1.0,3.2.0)",org.springframework.bean
+ s.factory.annotation;version="[3.1.0,3.2.0)",org.springframework.bean
+ s.factory.config;version="[3.1.0,3.2.0)",org.springframework.beans.fa
+ ctory.support;version="[3.1.0,3.2.0)",org.springframework.beans.facto
+ ry.xml;version="[3.1.0,3.2.0)",org.springframework.context;version="[
+ 3.1.0,3.2.0)",org.springframework.dao;version="[3.1.0,3.2.0)",org.spr
+ ingframework.jdbc.core;version="[3.1.0,3.2.0)",org.springframework.jd
+ bc.core.simple;version="[3.1.0,3.2.0)",org.springframework.jdbc.datas
+ ource;version="[3.1.0,3.2.0)",org.springframework.transaction;version
+ ="[3.1.0,3.2.0)",org.springframework.transaction.support;version="[3.
+ 1.0,3.2.0)",org.springframework.util;version="[3.1.0,3.2.0)",org.spri
+ ngframework.util.xml;version="[3.1.0,3.2.0)",org.w3c.dom;version="0.0
+ .0"
+Bundle-SymbolicName: riot.revolt
+

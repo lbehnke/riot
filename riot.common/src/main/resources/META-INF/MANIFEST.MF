@@ -1,0 +1,211 @@
+Manifest-Version: 1.0
+Export-Package: org.riotfamily.common.beans.config;version="9.1.0.OSGI
+ ";uses:="org.springframework.beans.factory,org.springframework.web.co
+ ntext.support",org.riotfamily.common.beans.factory;version="9.1.0.OSG
+ I";uses:="javax.servlet,org.springframework.beans.factory,org.springf
+ ramework.beans.factory.annotation,org.springframework.beans.factory.c
+ onfig,org.springframework.context,org.springframework.util,org.spring
+ framework.web.context",org.riotfamily.common.beans.injection;version=
+ "9.1.0.OSGI";uses:="org.springframework.beans,org.springframework.bea
+ ns.factory.config",org.riotfamily.common.beans.namespace;version="9.1
+ .0.OSGI";uses:="org.springframework.beans.factory,org.springframework
+ .beans.factory.config,org.springframework.beans.factory.parsing,org.s
+ pringframework.beans.factory.support,org.springframework.beans.factor
+ y.xml,org.w3c.dom",org.riotfamily.common.beans.override;version="9.1.
+ 0.OSGI";uses:="org.riotfamily.common.beans.namespace,org.springframew
+ ork.beans,org.springframework.beans.factory.config,org.springframewor
+ k.beans.factory.support,org.springframework.beans.factory.xml,org.spr
+ ingframework.core,org.w3c.dom",org.riotfamily.common.beans.property;v
+ ersion="9.1.0.OSGI";uses:="org.springframework.beans,org.springframew
+ ork.core,org.springframework.core.convert",org.riotfamily.common.bean
+ s.reload;version="9.1.0.OSGI",org.riotfamily.common.collection;versio
+ n="9.1.0.OSGI";uses:="org.junit",org.riotfamily.common.freemarker;ver
+ sion="9.1.0.OSGI";uses:="freemarker.cache,freemarker.core,freemarker.
+ template,org.springframework.beans.factory,org.springframework.contex
+ t,org.springframework.core.io,org.springframework.web.servlet.view.fr
+ eemarker",org.riotfamily.common.hibernate;version="9.1.0.OSGI";uses:=
+ "freemarker.template,javax.persistence,org.dom4j,org.hibernate,org.hi
+ bernate.collection,org.hibernate.engine,org.hibernate.engine.query.sq
+ l,org.hibernate.event,org.hibernate.impl,org.hibernate.jdbc,org.hiber
+ nate.loader.custom,org.hibernate.persister.entity,org.hibernate.trans
+ form,org.hibernate.type,org.riotfamily.common.beans.injection,org.rio
+ tfamily.common.collection,org.riotfamily.common.freemarker,org.spring
+ framework.beans,org.springframework.beans.factory,org.springframework
+ .context,org.springframework.dao,org.springframework.orm.hibernate3,o
+ rg.springframework.orm.hibernate3.annotation,org.springframework.tran
+ saction,org.springframework.transaction.annotation",org.riotfamily.co
+ mmon.i18n;version="9.1.0.OSGI";uses:="javax.servlet.http,org.springfr
+ amework.beans,org.springframework.beans.factory,org.springframework.c
+ ontext,org.springframework.context.support,org.springframework.valida
+ tion,org.springframework.web.servlet,org.springframework.web.servlet.
+ mvc",org.riotfamily.common.io;version="9.1.0.OSGI";uses:="javax.activ
+ ation,org.springframework.beans.factory,org.springframework.context,o
+ rg.springframework.core.io",org.riotfamily.common.log4j;version="9.1.
+ 0.OSGI",org.riotfamily.common.scheduling;version="9.1.0.OSGI";uses:="
+ org.hibernate,org.quartz,org.quartz.spi,org.riotfamily.common.hiberna
+ te,org.springframework.beans.factory,org.springframework.context,org.
+ springframework.core,org.springframework.scheduling.quartz,org.spring
+ framework.transaction,org.springframework.util",org.riotfamily.common
+ .ui;version="9.1.0.OSGI";uses:="javax.servlet.http,org.riotfamily.com
+ mon.i18n",org.riotfamily.common.util;version="9.1.0.OSGI";uses:="java
+ x.servlet,org.springframework.beans.factory,org.springframework.beans
+ .factory.config,org.springframework.core.io,org.springframework.web.c
+ ontext",org.riotfamily.common.web.cache;version="9.1.0.OSGI";uses:="j
+ avax.servlet.http,org.riotfamily.common.web.cache.controller,org.spri
+ ngframework.beans.factory",org.riotfamily.common.web.cache.annotation
+ ;version="9.1.0.OSGI";uses:="javax.servlet,javax.servlet.http,org.aop
+ alliance.intercept,org.junit,org.riotfamily.cachius,org.riotfamily.ca
+ chius.http,org.riotfamily.common.web.cache,org.springframework.beans,
+ org.springframework.beans.factory,org.springframework.core,org.spring
+ framework.stereotype,org.springframework.web.bind.annotation,org.spri
+ ngframework.web.context,org.springframework.web.servlet,org.springfra
+ mework.web.servlet.mvc.annotation",org.riotfamily.common.web.cache.co
+ ntroller;version="9.1.0.OSGI";uses:="javax.servlet.http,org.riotfamil
+ y.cachius,org.riotfamily.cachius.http,org.riotfamily.common.web.cache
+ ,org.riotfamily.common.web.mvc.view,org.springframework.context,org.s
+ pringframework.core,org.springframework.web.servlet,org.springframewo
+ rk.web.servlet.mvc",org.riotfamily.common.web.cache.freemarker;versio
+ n="9.1.0.OSGI";uses:="freemarker.cache,freemarker.template,org.riotfa
+ mily.common.freemarker",org.riotfamily.common.web.cache.hibernate;ver
+ sion="9.1.0.OSGI";uses:="org.hibernate,org.hibernate.type,org.riotfam
+ ily.cachius,org.riotfamily.common.hibernate,org.springframework.util"
+ ,org.riotfamily.common.web.cache.tags;version="9.1.0.OSGI";uses:="org
+ .hibernate,org.riotfamily.cachius,org.riotfamily.common.hibernate",or
+ g.riotfamily.common.web.controller;version="9.1.0.OSGI";uses:="javax.
+ activation,javax.servlet.http,org.riotfamily.common.web.cache.control
+ ler,org.springframework.core.io,org.springframework.ui,org.springfram
+ ework.web.servlet,org.springframework.web.servlet.mvc",org.riotfamily
+ .common.web.css;version="9.1.0.OSGI";uses:="freemarker.template,javax
+ .servlet,javax.servlet.http,org.riotfamily.common.web.cache,org.riotf
+ amily.common.web.cache.controller,org.riotfamily.common.web.performan
+ ce,org.springframework.beans.factory,org.springframework.core.io,org.
+ springframework.web.context,org.springframework.web.servlet,org.sprin
+ gframework.web.servlet.mvc",org.riotfamily.common.web.filter;version=
+ "9.1.0.OSGI";uses:="javax.servlet,javax.servlet.http,org.springframew
+ ork.beans.factory,org.springframework.context,org.springframework.web
+ .context,org.springframework.web.filter",org.riotfamily.common.web.ma
+ cro;version="9.1.0.OSGI";uses:="freemarker.core,freemarker.template,j
+ avax.servlet,javax.servlet.http,org.riotfamily.common.web.mvc.mapping
+ ,org.riotfamily.common.web.performance,org.springframework.context,or
+ g.springframework.web.context,org.springframework.web.servlet.support
+ ",org.riotfamily.common.web.mvc.interceptor;version="9.1.0.OSGI";uses
+ :="javax.servlet.http,org.springframework.core,org.springframework.or
+ m.hibernate3.support,org.springframework.util",org.riotfamily.common.
+ web.mvc.mapping;version="9.1.0.OSGI";uses:="javax.activation,javax.se
+ rvlet.http,org.springframework.beans,org.springframework.beans.factor
+ y,org.springframework.context,org.springframework.core.io,org.springf
+ ramework.web.servlet,org.springframework.web.servlet.handler,org.spri
+ ngframework.web.servlet.mvc",org.riotfamily.common.web.mvc.scope;vers
+ ion="9.1.0.OSGI";uses:="javax.servlet.http,org.riotfamily.common.coll
+ ection,org.riotfamily.common.web.mvc.interceptor,org.riotfamily.commo
+ n.web.mvc.view,org.springframework.core,org.springframework.web.bind.
+ support,org.springframework.web.context.request",org.riotfamily.commo
+ n.web.mvc.servlet;version="9.1.0.OSGI";uses:="javax.servlet,javax.ser
+ vlet.http,org.riotfamily.common.beans.reload,org.springframework.bean
+ s,org.springframework.beans.factory,org.springframework.beans.factory
+ .support,org.springframework.beans.factory.xml,org.springframework.co
+ ntext,org.springframework.core.io,org.springframework.web.context.sup
+ port,org.springframework.web.servlet,org.xml.sax",org.riotfamily.comm
+ on.web.mvc.view;version="9.1.0.OSGI";uses:="freemarker.template,javax
+ .servlet.http,net.sf.json,org.dom4j,org.riotfamily.common.web.mvc.map
+ ping,org.springframework.beans.factory,org.springframework.context,or
+ g.springframework.core,org.springframework.web.servlet,org.springfram
+ ework.web.servlet.view,org.springframework.web.servlet.view.freemarke
+ r",org.riotfamily.common.web.performance;version="9.1.0.OSGI";uses:="
+ javax.servlet,javax.servlet.http,org.mozilla.javascript,org.riotfamil
+ y.common.web.cache,org.riotfamily.common.web.cache.controller,org.rio
+ tfamily.common.web.mvc.interceptor,org.springframework.beans.factory,
+ org.springframework.web.servlet,org.springframework.web.servlet.mvc",
+ org.riotfamily.common.web.support;version="9.1.0.OSGI";uses:="javax.s
+ ervlet,javax.servlet.http",org.riotfamily.common.web.template;version
+ ="9.1.0.OSGI";uses:="freemarker.core,freemarker.template,javax.servle
+ t.http,org.riotfamily.common.web.macro",org.riotfamily.common.xml;ver
+ sion="9.1.0.OSGI";uses:="org.slf4j,org.springframework.beans,org.spri
+ ngframework.beans.factory,org.springframework.core.io,org.w3c.dom,org
+ .xml.sax"
+Bundle-Vendor: riotfamily.org
+Bundle-ClassPath: .
+Bundle-Version: 9.1.0.OSGI
+Tool: Bundlor 1.1.2.RELEASE
+Import-Library: org.springframework.spring;version="[3.0, 3.5)"
+Bundle-Name: Riot Common Bundle
+Bundle-ManifestVersion: 2
+Import-Package: com.mchange.v2.c3p0;version="0",com.yahoo.platform.yui
+ .compressor;version="[2.4.2,2.5.0)",freemarker.cache;version="[2.3.18
+ ,2.4.0)",freemarker.core;version="[2.3.18,2.4.0)",freemarker.ext.bean
+ s;version="[2.3.18,2.4.0)",freemarker.ext.servlet;version="[2.3.18,2.
+ 4.0)",freemarker.template;version="[2.3.18,2.4.0)",javax.activation;v
+ ersion="0.0.0",javax.imageio;version="0.0.0",javax.imageio.metadata;v
+ ersion="0.0.0",javax.imageio.plugins.jpeg;version="0.0.0",javax.image
+ io.stream;version="0.0.0",javax.persistence;version="[1.0.0,1.1.0)",j
+ avax.servlet;version="2.5.0",javax.servlet.http;version="2.5.0",javax
+ .xml.parsers;version="0.0.0",javax.xml.transform;version="0.0.0",java
+ x.xml.transform.dom;version="0.0.0",javax.xml.transform.stream;versio
+ n="0.0.0",junit.framework;version="[4.7.0,5.0.0)",net.sf.json;version
+ ="[2.2.3,2.3.0)",org.aopalliance.aop;version="[1.0.0,1.1.0)",org.aopa
+ lliance.intercept;version="[1.0.0,1.1.0)",org.apache.commons.logging;
+ version="[1.1.1,1.2.0)",org.dom4j;version="1.6.1",org.dom4j.io;versio
+ n="1.6.1",org.hibernate;version="[3.6.0,3.7.0)",org.hibernate.cfg;ver
+ sion="[3.6.0,3.7.0)",org.hibernate.classic;version="[3.6.0,3.7.0)",or
+ g.hibernate.collection;version="[3.6.0,3.7.0)",org.hibernate.criterio
+ n;version="[3.6.0,3.7.0)",org.hibernate.dialect;version="[3.6.0,3.7.0
+ )",org.hibernate.engine;version="[3.6.0,3.7.0)",org.hibernate.engine.
+ query.sql;version="[3.6.0,3.7.0)",org.hibernate.event;version="[3.6.0
+ ,3.7.0)",org.hibernate.impl;version="[3.6.0,3.7.0)",org.hibernate.jdb
+ c;version="[3.6.0,3.7.0)",org.hibernate.loader.custom;version="[3.6.0
+ ,3.7.0)",org.hibernate.metadata;version="[3.6.0,3.7.0)",org.hibernate
+ .persister.collection;version="[3.6.0,3.7.0)",org.hibernate.persister
+ .entity;version="[3.6.0,3.7.0)",org.hibernate.proxy;version="[3.6.0,3
+ .7.0)",org.hibernate.tool.hbm2ddl;version="[3.6.0,3.7.0)",org.hiberna
+ te.transform;version="[3.6.0,3.7.0)",org.hibernate.type;version="[3.6
+ .0,3.7.0)",org.hibernate.util;version="[3.6.0,3.7.0)",org.mozilla.jav
+ ascript;version="[2.4.2,2.5.0)",org.quartz;version="[1.6.1,1.8.0)",or
+ g.quartz.spi;version="[1.6.1,1.8.0)",org.riotfamily.cachius;version="
+ [9.1.0, 9.2.0)",org.riotfamily.cachius.http;version="[9.1.0, 9.2.0)",
+ org.riotfamily.cachius.persistence;version="[9.1.0, 9.2.0)",org.riotf
+ amily.core.security.session;version="[9.1.0, 9.2.0)",org.riotfamily.r
+ evolt;version="[9.1.0, 9.2.0)",org.slf4j;version="[1.6.1,1.7.3)",org.
+ springframework.aop.framework;version="[3.0, 3.5)",org.springframewor
+ k.beans;version="[3.0, 3.5)",org.springframework.beans.factory;versio
+ n="[3.0, 3.5)",org.springframework.beans.factory.annotation;version="
+ [3.0, 3.5)",org.springframework.beans.factory.config;version="[3.0, 3
+ .5)",org.springframework.beans.factory.parsing;version="[3.0, 3.5)",o
+ rg.springframework.beans.factory.support;version="[3.0, 3.5)",org.spr
+ ingframework.beans.factory.xml;version="[3.0, 3.5)",org.springframewo
+ rk.beans.propertyeditors;version="[3.0, 3.5)",org.springframework.bea
+ ns.support;version="[3.0, 3.5)",org.springframework.context;version="
+ [3.0, 3.5)",org.springframework.context.support;version="[3.0, 3.5)",
+ org.springframework.core;version="[3.0, 3.5)",org.springframework.cor
+ e.annotation;version="[3.0, 3.5)",org.springframework.core.convert;ve
+ rsion="[3.0, 3.5)",org.springframework.core.io;version="[3.0, 3.5)",o
+ rg.springframework.core.io.support;version="[3.0, 3.5)",org.springfra
+ mework.dao;version="[3.0, 3.5)",org.springframework.mock.web;version=
+ "[3.0, 3.5)",org.springframework.orm.hibernate3;version="[3.0, 3.5)",
+ org.springframework.orm.hibernate3.annotation;version="[3.0, 3.5)",or
+ g.springframework.orm.hibernate3.support;version="[3.0, 3.5)",org.spr
+ ingframework.scheduling.quartz;version="[3.0, 3.5)",org.springframewo
+ rk.stereotype;version="[3.0, 3.5)",org.springframework.transaction;ve
+ rsion="[3.0, 3.5)",org.springframework.transaction.annotation;version
+ ="[3.0, 3.5)",org.springframework.transaction.support;version="[3.0, 
+ 3.5)",org.springframework.ui;version="[3.0, 3.5)",org.springframework
+ .ui.freemarker;version="[3.0, 3.5)",org.springframework.util;version=
+ "[3.0, 3.5)",org.springframework.util.xml;version="[3.0, 3.5)",org.sp
+ ringframework.validation;version="[3.0, 3.5)",org.springframework.web
+ .bind.annotation;version="[3.0, 3.5)",org.springframework.web.bind.su
+ pport;version="[3.0, 3.5)",org.springframework.web.context;version="[
+ 3.0, 3.5)",org.springframework.web.context.request;version="[3.0, 3.5
+ )",org.springframework.web.context.support;version="[3.0, 3.5)",org.s
+ pringframework.web.filter;version="[3.0, 3.5)",org.springframework.we
+ b.multipart.commons;version="[3.0, 3.5)",org.springframework.web.serv
+ let;version="[3.0, 3.5)",org.springframework.web.servlet.handler;vers
+ ion="[3.0, 3.5)",org.springframework.web.servlet.i18n;version="[3.0, 
+ 3.5)",org.springframework.web.servlet.mvc;version="[3.0, 3.5)",org.sp
+ ringframework.web.servlet.mvc.annotation;version="[3.0, 3.5)",org.spr
+ ingframework.web.servlet.support;version="[3.0, 3.5)",org.springframe
+ work.web.servlet.view;version="[3.0, 3.5)",org.springframework.web.se
+ rvlet.view.freemarker;version="[3.0, 3.5)",org.springframework.web.ut
+ il;version="[3.0, 3.5)",org.w3c.dom;version="0.0.0",org.xml.sax;versi
+ on="0.0.0"
+Bundle-SymbolicName: riot.common
+Web-ContextPath: biotyper
+

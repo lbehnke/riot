@@ -16,6 +16,8 @@ import org.riotfamily.cachius.persistence.Deleteable;
 
 public class ResponseData implements Serializable, Deleteable {
 
+	private static final long serialVersionUID = 1L;
+
 	/** The HTTP Status code */
     private int statusCode;
     

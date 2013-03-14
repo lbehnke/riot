@@ -16,6 +16,8 @@ import javax.servlet.http.HttpServletRequest;
 
 public class StaticHeaderValue implements HeaderValue {
 
+	private static final long serialVersionUID = 1L;
+
 	private String value;
 
 	public StaticHeaderValue(String value) {
@@ -24,6 +26,11 @@ public class StaticHeaderValue implements HeaderValue {
 
 	public String resolve(HttpServletRequest request) {
 		return value;
+	}
+	
+	@Override
+	public String toString() {
+		return value == null ? "" : value;
 	}
 	
 }

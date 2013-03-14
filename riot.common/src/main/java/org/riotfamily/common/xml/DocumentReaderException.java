@@ -17,6 +17,8 @@ import org.springframework.core.io.Resource;
 
 public class DocumentReaderException extends FatalBeanException {
 
+	private static final long serialVersionUID = 1L;
+
 	public DocumentReaderException(Resource resource, Throwable cause) {
 		super(resource.getDescription(), cause);
 	}

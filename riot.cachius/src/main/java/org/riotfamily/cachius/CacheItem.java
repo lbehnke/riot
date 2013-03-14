@@ -15,6 +15,8 @@ import org.slf4j.LoggerFactory;
  */
 public class CacheItem implements Serializable {
 
+	private static final long serialVersionUID = 1L;
+
 	private Logger log = LoggerFactory.getLogger(CacheItem.class);
 	
 	private String key;

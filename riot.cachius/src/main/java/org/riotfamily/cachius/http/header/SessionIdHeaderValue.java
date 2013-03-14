@@ -18,6 +18,8 @@ import javax.servlet.http.HttpSession;
 
 public class SessionIdHeaderValue extends DynamicHeaderValue {
 
+	private static final long serialVersionUID = 1L;
+
 	public SessionIdHeaderValue(String value, int insertAt, int skip) {
 		super(value, insertAt, skip);
 	}
@@ -26,7 +28,7 @@ public class SessionIdHeaderValue extends DynamicHeaderValue {
 	protected void appendDynamicValue(StringBuilder sb,
 			HttpServletRequest request) {
 		
-		if (!request.isRequestedSessionIdFromCookie()) {
+		if (request != null && !request.isRequestedSessionIdFromCookie()) {
 			HttpSession session = request.getSession(false);
 			if (session != null) {
 				sb.append(";jsessionid=");

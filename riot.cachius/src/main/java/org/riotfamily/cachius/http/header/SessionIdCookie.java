@@ -17,6 +17,8 @@ import javax.servlet.http.HttpServletRequest;
 
 public class SessionIdCookie extends AbstractCookie {
 
+	private static final long serialVersionUID = 1L;
+
 	public SessionIdCookie(Cookie cookie) {
 		super(cookie);
 	}

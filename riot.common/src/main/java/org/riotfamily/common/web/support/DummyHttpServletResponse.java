@@ -17,6 +17,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.io.Writer;
+import java.util.Collection;
 import java.util.Locale;
 
 import javax.servlet.ServletOutputStream;
@@ -279,6 +280,26 @@ public class DummyHttpServletResponse implements HttpServletResponse {
 	 */
 	public void setLocale(Locale locale) {
 		this.locale = locale;
+	}
+
+	@Override
+	public String getHeader(String arg0) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public Collection<String> getHeaderNames() {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public Collection<String> getHeaders(String arg0) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public int getStatus() {
+		throw new UnsupportedOperationException();
 	}
 
 }

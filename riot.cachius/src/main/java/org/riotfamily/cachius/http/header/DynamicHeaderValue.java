@@ -16,6 +16,8 @@ import javax.servlet.http.HttpServletRequest;
 
 public abstract class DynamicHeaderValue implements HeaderValue {
 
+	private static final long serialVersionUID = 1L;
+
 	private String value;
 
 	int insertAt;
@@ -38,6 +40,11 @@ public abstract class DynamicHeaderValue implements HeaderValue {
 		return sb.toString();
 	}
 
+	@Override
+	public String toString() {
+		return resolve(null);
+	}
+	
 	protected abstract void appendDynamicValue(StringBuilder sb, HttpServletRequest request);
 
 }

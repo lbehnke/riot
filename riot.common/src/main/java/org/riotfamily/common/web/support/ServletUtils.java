@@ -394,10 +394,9 @@ public final class ServletUtils {
 		response.setHeader("Location", response.encodeRedirectURL(location));
 	}
 	
-	@SuppressWarnings("unchecked")
 	public static Map<String, Object> takeAttributesSnapshot(HttpServletRequest request) {
 		Map<String, Object> snapshot = new HashMap<String, Object>();
-		Enumeration attrNames = request.getAttributeNames();
+		Enumeration<?> attrNames = request.getAttributeNames();
 		while (attrNames.hasMoreElements()) {
 			String attrName = (String) attrNames.nextElement();
 			snapshot.put(attrName, request.getAttribute(attrName));
@@ -408,7 +407,6 @@ public final class ServletUtils {
 	/**
 	 * Restores request attributes from the given map.
 	 */
-	@SuppressWarnings("unchecked")
 	public static void restoreAttributes(HttpServletRequest request,
 			Map<String, Object> attributesSnapshot) {
 
@@ -437,10 +435,9 @@ public final class ServletUtils {
 	 * instead of String arrays. When more than one parameter with the same
 	 * name is present, only the first value is put into the map.
 	 */
-	@SuppressWarnings("unchecked")
 	public static Map<String, String> getSingularParameterMap(HttpServletRequest request) {
 		HashMap<String, String> params = new HashMap<String, String>();
-		Enumeration names = request.getParameterNames();
+		Enumeration<?> names = request.getParameterNames();
 		while (names.hasMoreElements()) {
 			String name = (String) names.nextElement();
 			params.put(name, request.getParameter(name));
@@ -670,7 +667,6 @@ public final class ServletUtils {
 	 * Returns an URL with all of the given request's parameters added to the
 	 * given URL's query string.
 	 */
-	@SuppressWarnings("unchecked")
 	public static String addRequestParameters(String url, HttpServletRequest request) {
 		Enumeration<String> e = request.getParameterNames();
 		while (e.hasMoreElements()) {
@@ -686,7 +682,6 @@ public final class ServletUtils {
 	/**
 	 * Appends all of the given request's parameters to the given URL's query string.
 	 */
-	@SuppressWarnings("unchecked")
 	public static void appendRequestParameters(StringBuffer url, HttpServletRequest request) {
 		Enumeration<String> e = request.getParameterNames();
 		while (e.hasMoreElements()) {
@@ -702,7 +697,6 @@ public final class ServletUtils {
 	 * Appends all of the given request's parameters to the given URL's query string.
 	 * @since 9.0
 	 */
-	@SuppressWarnings("unchecked")
 	public static void appendRequestParameters(StringBuilder url, HttpServletRequest request) {
 		Enumeration<String> e = request.getParameterNames();
 		while (e.hasMoreElements()) {

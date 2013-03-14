@@ -33,6 +33,8 @@ import org.riotfamily.cachius.http.support.IOUtils;
 
 public class GzipContent extends BinaryContent {
 
+	private static final long serialVersionUID = -3959062718523943587L;
+
 	private static Pattern IE_MAJOR_VERSION_PATTERN = 
 			Pattern.compile("^Mozilla/\\d\\.\\d+ \\(compatible[-;] MSIE (\\d)");
 
@@ -103,9 +105,8 @@ public class GzipContent extends BinaryContent {
 	/**
 	 * Returns whether the Accept-Encoding header contains "gzip".
 	 */
-	@SuppressWarnings("unchecked")
 	protected boolean clientAcceptsGzip(HttpServletRequest request) {
-		Enumeration values = request.getHeaders("Accept-Encoding");
+		Enumeration<?> values = request.getHeaders("Accept-Encoding");
 		if (values != null) {
 			while (values.hasMoreElements()) {
 				String value = (String) values.nextElement();

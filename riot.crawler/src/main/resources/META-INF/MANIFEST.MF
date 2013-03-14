@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Export-Package: org.riotfamily.crawler;uses:="javax.servlet.http,org.a
+ pache.commons.httpclient.methods,org.htmlparser,org.htmlparser.util,o
+ rg.springframework.beans.factory,org.springframework.context,org.spri
+ ngframework.context.event,org.springframework.web.servlet,org.springf
+ ramework.web.servlet.mvc"
+Tool: Bundlor 1.1.2.RELEASE
+Import-Package: javax.servlet,javax.servlet.http,org.apache.commons.ht
+ tpclient,org.apache.commons.httpclient.methods,org.apache.commons.htt
+ pclient.params,org.htmlparser,org.htmlparser.util,org.riotfamily.comm
+ on.io,org.riotfamily.common.scheduling,org.riotfamily.common.web.supp
+ ort,org.slf4j,org.springframework.beans.factory,org.springframework.c
+ ontext,org.springframework.context.event,org.springframework.util,org
+ .springframework.web.servlet,org.springframework.web.servlet.mvc
+
