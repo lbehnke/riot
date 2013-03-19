@@ -10,7 +10,7 @@
 
 	<override:if-present ref="pageResolver">
 	    <override:bean ref="riotSearchController"
-	       class="org.riotfamily.search.site.SiteSearchController" merge="true" />
+	       class="org.riotfamily.sitesearch.SiteSearchController" merge="true" />
 	</override:if-present>
 
 </beans>

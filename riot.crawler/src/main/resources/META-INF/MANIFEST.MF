@@ -5,11 +5,18 @@ Export-Package: org.riotfamily.crawler;uses:="javax.servlet.http,org.a
  ngframework.context.event,org.springframework.web.servlet,org.springf
  ramework.web.servlet.mvc"
 Tool: Bundlor 1.1.2.RELEASE
-Import-Package: javax.servlet,javax.servlet.http,org.apache.commons.ht
- tpclient,org.apache.commons.httpclient.methods,org.apache.commons.htt
- pclient.params,org.htmlparser,org.htmlparser.util,org.riotfamily.comm
- on.io,org.riotfamily.common.scheduling,org.riotfamily.common.web.supp
- ort,org.slf4j,org.springframework.beans.factory,org.springframework.c
- ontext,org.springframework.context.event,org.springframework.util,org
- .springframework.web.servlet,org.springframework.web.servlet.mvc
+Import-Library: org.springframework.spring;version="[3.0,3.5)"
+Bundle-ManifestVersion: 2
+Import-Package: javax.servlet;version="2.5.0",javax.servlet.http;versi
+ on="2.5.0",org.apache.commons.httpclient;version="3.1.0",org.apache.c
+ ommons.httpclient.methods;version="3.1.0",org.apache.commons.httpclie
+ nt.params;version="3.1.0",org.htmlparser;version="1.6.0",org.htmlpars
+ er.util;version="1.6.0",org.riotfamily.common.io;version="9.1.0.OSGI"
+ ,org.riotfamily.common.scheduling;version="9.1.0.OSGI",org.riotfamily
+ .common.web.support;version="9.1.0.OSGI",org.slf4j;version="[1.6.1,1.
+ 7.0)",org.springframework.beans.factory;version="[3.0,3.5)",org.sprin
+ gframework.context;version="[3.0,3.5)",org.springframework.context.ev
+ ent;version="[3.0,3.5)",org.springframework.util;version="[3.0,3.5)",
+ org.springframework.web.servlet;version="[3.0,3.5)",org.springframewo
+ rk.web.servlet.mvc;version="[3.0,3.5)"
 

@@ -10,15 +10,23 @@ Export-Package: org.riotfamily.linkcheck;uses:="javax.persistence,org.
  otfamily.linkcheck.runtime.resources.style.icons.editors,org.riotfami
  ly.linkcheck.runtime.resources.style.images
 Tool: Bundlor 1.1.2.RELEASE
-Import-Package: javax.persistence,org.apache.commons.httpclient,org.ap
- ache.commons.httpclient.methods,org.apache.commons.httpclient.params,
- org.directwebremoting.annotations,org.hibernate,org.hibernate.annotat
- ions,org.riotfamily.common.beans.property,org.riotfamily.common.hiber
- nate,org.riotfamily.common.util,org.riotfamily.common.web.support,org
- .riotfamily.core.dao.hibernate,org.riotfamily.core.resource,org.riotf
- amily.core.screen,org.riotfamily.core.screen.list.command,org.riotfam
- ily.core.screen.list.command.impl.support,org.riotfamily.core.screen.
- list.command.result,org.riotfamily.crawler,org.slf4j,org.springframew
- ork.dao,org.springframework.transaction.annotation,org.springframewor
- k.util
+Import-Library: org.springframework.spring;version="[3.0,3.5)"
+Bundle-ManifestVersion: 2
+Import-Package: javax.persistence;version="[1.0.0,2.0.0)",org.apache.c
+ ommons.httpclient;version="3.1.0",org.apache.commons.httpclient.metho
+ ds;version="3.1.0",org.apache.commons.httpclient.params;version="3.1.
+ 0",org.directwebremoting.annotations;version="[3.0.0,3.1.0)",org.hibe
+ rnate;version="[3.2.0,3.6.0)",org.hibernate.annotations;version="[3.2
+ .0,3.6.0)",org.riotfamily.common.beans.property;version="9.1.0.OSGI",
+ org.riotfamily.common.hibernate;version="9.1.0.OSGI",org.riotfamily.c
+ ommon.util;version="9.1.0.OSGI",org.riotfamily.common.web.support;ver
+ sion="9.1.0.OSGI",org.riotfamily.core.dao.hibernate;version="9.1.0.OS
+ GI",org.riotfamily.core.resource;version="9.1.0.OSGI",org.riotfamily.
+ core.screen;version="9.1.0.OSGI",org.riotfamily.core.screen.list.comm
+ and;version="9.1.0.OSGI",org.riotfamily.core.screen.list.command.impl
+ .support;version="9.1.0.OSGI",org.riotfamily.core.screen.list.command
+ .result;version="9.1.0.OSGI",org.riotfamily.crawler;version="9.1.0.OS
+ GI",org.slf4j;version="[1.6.1,1.7.0)",org.springframework.dao;version
+ ="[3.0,3.5)",org.springframework.transaction.annotation;version="[3.0
+ ,3.5)",org.springframework.util;version="[3.0,3.5)"
 

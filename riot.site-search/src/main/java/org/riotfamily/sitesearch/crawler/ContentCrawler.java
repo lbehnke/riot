@@ -10,10 +10,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.riotfamily.crawler;
+package org.riotfamily.sitesearch.crawler;
 
 import org.htmlparser.util.ParserException;
 import org.riotfamily.components.event.ContentChangedEvent;
+import org.riotfamily.crawler.Crawler;
+import org.riotfamily.crawler.Href;
+import org.riotfamily.crawler.PageData;
+import org.riotfamily.crawler.PageHandler;
 import org.springframework.context.ApplicationEvent;
 
 public class ContentCrawler extends Crawler {

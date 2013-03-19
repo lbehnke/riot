@@ -13,27 +13,29 @@
 
 	<dependencies>
 
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.riotfamily</groupId> -->
-<!-- 			<artifactId>riot.crawler</artifactId> -->
-<!-- 			<version>${pom.version}</version> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.apache.lucene</groupId> -->
-<!-- 			<artifactId>lucene-core</artifactId> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.apache.lucene</groupId> -->
-<!-- 			<artifactId>lucene-highlighter</artifactId> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.apache.lucene</groupId> -->
-<!-- 			<artifactId>lucene-analyzers</artifactId> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.apache.lucene</groupId> -->
-<!-- 			<artifactId>lucene-snowball</artifactId> -->
-<!-- 		</dependency> -->
+		<dependency>
+			<groupId>org.riotfamily</groupId>
+			<artifactId>riot.crawler</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>com.springsource.org.apache.lucene.analysis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>com.springsource.org.apache.lucene.search.highlight</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>com.springsource.org.apache.lucene.analysis.snowball</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>com.springsource.org.apache.lucene</artifactId>
+		</dependency>
+
+
 	</dependencies>
 
 </project>

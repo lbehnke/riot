@@ -282,22 +282,22 @@ public class DummyHttpServletResponse implements HttpServletResponse {
 		this.locale = locale;
 	}
 
-	@Override
+	/* Servlet API 3.0 compatiblity */
 	public String getHeader(String arg0) {
 		throw new UnsupportedOperationException();
 	}
 
-	@Override
+	/* Servlet API 3.0 compatiblity */
 	public Collection<String> getHeaderNames() {
 		throw new UnsupportedOperationException();
 	}
 
-	@Override
+	/* Servlet API 3.0 compatiblity */
 	public Collection<String> getHeaders(String arg0) {
 		throw new UnsupportedOperationException();
 	}
 
-	@Override
+	/* Servlet API 3.0 compatiblity */
 	public int getStatus() {
 		throw new UnsupportedOperationException();
 	}

@@ -1,0 +1,14 @@
+Bundle-ManifestVersion: 2
+Import-Template: com.mchange.v2.c3p0*;version="0.9.1.2",
+ javax.servlet*;version="2.5.0",
+ org.hibernate*;version="[3.2.0,3.7.0)",
+ org.riotfamily.cachius*;version="${project.version}",
+ org.riotfamily.common*;version="${project.version}",
+ org.riotfamily.core*;version="${project.version}",
+ org.slf4j;version="[1.6.1,1.7.0)",
+ org.springframework*;version="[3.0,3.5)"
+Import-Library: 
+ org.springframework.spring;version="[3.0,3.5)"
+Excluded-Imports: 
+ org.junit.*,
+ org.springframework.test.*

@@ -10,7 +10,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.riotfamily.search.site;
+package org.riotfamily.sitesearch;
 
 import org.riotfamily.common.web.support.ServletUtils;
 import org.riotfamily.crawler.LinkFilter;

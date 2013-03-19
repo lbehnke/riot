@@ -1,25 +1,22 @@
 Manifest-Version: 1.0
-Export-Package: org.riotfamily.cachius;version="9.1.0.OSGI";uses:="org
- .riotfamily.cachius.invalidation,org.riotfamily.cachius.persistence",
- org.riotfamily.cachius.http;version="9.1.0.OSGI";uses:="javax.servlet
- ,javax.servlet.http,org.riotfamily.cachius,org.riotfamily.cachius.htt
- p.content,org.riotfamily.cachius.http.header,org.riotfamily.cachius.h
- ttp.support,org.riotfamily.cachius.persistence",org.riotfamily.cachiu
- s.http.content;version="9.1.0.OSGI";uses:="javax.servlet,javax.servle
- t.http,org.riotfamily.cachius.http.support",org.riotfamily.cachius.ht
- tp.header;version="9.1.0.OSGI";uses:="javax.servlet.http",org.riotfam
- ily.cachius.http.support;version="9.1.0.OSGI";uses:="javax.servlet,ja
- vax.servlet.http",org.riotfamily.cachius.invalidation;version="9.1.0.
- OSGI";uses:="org.riotfamily.cachius",org.riotfamily.cachius.persisten
- ce;version="9.1.0.OSGI"
+Export-Package: org.riotfamily.cachius;uses:="org.riotfamily.cachius.i
+ nvalidation,org.riotfamily.cachius.persistence",org.riotfamily.cachiu
+ s.http;uses:="javax.servlet,javax.servlet.http,org.riotfamily.cachius
+ ,org.riotfamily.cachius.http.content,org.riotfamily.cachius.http.head
+ er,org.riotfamily.cachius.http.support,org.riotfamily.cachius.persist
+ ence",org.riotfamily.cachius.http.content;uses:="javax.servlet,javax.
+ servlet.http,org.riotfamily.cachius.http.support",org.riotfamily.cach
+ ius.http.header;uses:="javax.servlet.http",org.riotfamily.cachius.htt
+ p.support;uses:="javax.servlet,javax.servlet.http",org.riotfamily.cac
+ hius.invalidation;uses:="org.riotfamily.cachius",org.riotfamily.cachi
+ us.persistence
 Bundle-Vendor: riotfamily.org
 Bundle-ClassPath: .
 Bundle-Version: 9.1.0.OSGI
 Tool: Bundlor 1.1.2.RELEASE
 Bundle-Name: Riot Cachius Bundle
 Bundle-ManifestVersion: 2
-Import-Package: javax.servlet;version="[3.0.0,3.1.0)",
- javax.servlet.http;version="[3.0.0,3.1.0)",
- org.slf4j;version="[1.6.1,1.7.3)"
+Import-Package: javax.servlet;version="2.5.0",javax.servlet.http;versi
+ on="2.5.0",org.slf4j;version="[1.6.1, 1.7.3)"
 Bundle-SymbolicName: riot.cachius
 

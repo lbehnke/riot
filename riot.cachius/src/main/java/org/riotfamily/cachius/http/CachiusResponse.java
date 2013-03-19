@@ -148,8 +148,8 @@ public class CachiusResponse implements HttpServletResponse {
     public void setHeader(String name, String value) {
     	data.getHeaders().set(name, value);
     }
-    
-	@Override
+
+    /* Servlet API 3.0 compatibility */
 	public String getHeader(String name) {
 		Header header = data.getHeaders().getHeader(name);
 		if (header != null) {
@@ -158,7 +158,7 @@ public class CachiusResponse implements HttpServletResponse {
 		return null;
 	}
 
-	@Override
+    /* Servlet API 3.0 compatibility */
 	public Collection<String> getHeaders(String name) {
 		return data.getHeaders().getHeader(name).getStringValues();
 	}

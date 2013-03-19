@@ -13,85 +13,49 @@
 
 	<dependencies>
 
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.riotfamily</groupId> -->
-<!-- 			<artifactId>riot.common</artifactId> -->
-<!-- 			<version>${pom.version}</version> -->
-<!-- 			<scope>compile</scope> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.springframework</groupId> -->
-<!-- 			<artifactId>org.springframework.web</artifactId> -->
-<!-- 			<scope>compile</scope> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.springframework</groupId> -->
-<!-- 			<artifactId>org.springframework.web.servlet</artifactId> -->
-<!-- 			<scope>compile</scope> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>javax.servlet</groupId> -->
-<!-- 			<artifactId>servlet-api</artifactId> -->
-<!-- 			<scope>provided</scope> -->
-<!-- 		</dependency> -->
-		
-<!-- 		<dependency> -->
-<!-- 			<groupId>commons-fileupload</groupId> -->
-<!-- 			<artifactId>commons-fileupload</artifactId> -->
-<!-- 			<scope>compile</scope> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>commons-io</groupId> -->
-<!-- 			<artifactId>commons-io</artifactId> -->
-<!-- 			<scope>compile</scope> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.riotfamily</groupId> -->
-<!-- 			<artifactId>riot.jslibs</artifactId> -->
-<!-- 			<version>${pom.version}</version> -->
-<!-- 			<scope>runtime</scope> -->
-<!-- 		</dependency> -->
+		<dependency>
+			<groupId>org.riotfamily</groupId>
+			<artifactId>riot.common</artifactId>
+			<version>${project.version}</version>
+			<scope>compile</scope>
+		</dependency>
 
-		<!-- ========================================================= -->
-		<!-- Test compile dependencies  -->
-		<!-- ========================================================= -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.riotfamily</groupId> -->
+		<!-- <artifactId>riot.jslibs</artifactId> -->
+		<!-- <version>${project.version}</version> -->
+		<!-- <scope>runtime</scope> -->
+		<!-- </dependency> -->
 
-<!-- 		<dependency> -->
-<!-- 			<groupId>net.sourceforge.htmlunit</groupId> -->
-<!-- 			<artifactId>htmlunit</artifactId> -->
-<!-- 			<version>2.7</version> -->
-<!-- 			<scope>test</scope> -->
-<!-- 		</dependency> -->
-		
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.jitr</groupId> -->
-<!-- 			<artifactId>jitr</artifactId> -->
-<!-- 			<version>1.0.0</version> -->
-<!-- 			<scope>test</scope> -->
-<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>javax.servlet</groupId> -->
+		<!-- <artifactId>com.springsource.javax.servlet</artifactId> -->
+		<!-- </dependency> -->
 
 
 <!-- 		<dependency> -->
-<!-- 			<groupId>org.slf4j</groupId> -->
-<!-- 			<artifactId>slf4j-api</artifactId> -->
-<!-- 			<scope>compile</scope> -->
+<!-- 		<groupId>org.apache.commons</groupId> -->
+<!-- 		<artifactId>com.springsource.org.apache.commons.fileupload</artifactId> -->
+<!-- 		<scope>runtime</scope> -->
 <!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.slf4j</groupId> -->
-<!-- 			<artifactId>jcl-over-slf4j</artifactId> -->
-<!-- 			<scope>runtime</scope> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.slf4j</groupId> -->
-<!-- 			<artifactId>slf4j-log4j12</artifactId> -->
-<!-- 			<scope>runtime</scope> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>log4j</groupId> -->
-<!-- 			<artifactId>log4j</artifactId> -->
-<!-- 			<scope>compile</scope> -->
-<!-- 		</dependency> -->
-	</dependencies>
+
+		<!-- <dependency> -->
+		<!-- <groupId>org.apache.commons</groupId> -->
+		<!-- <artifactId>com.springsource.org.apache.commons.io</artifactId> -->
+		<!-- <scope>runtime</scope> -->
+		<!-- </dependency> -->
+
+
 	
+<!-- 		<dependency> -->
+<!-- 		<groupId>org.junit</groupId> -->
+<!-- 		<artifactId>com.springsource.org.junit</artifactId> -->
+<!-- 		<scope>test</scope> -->
+<!-- 		</dependency> -->
+
+
+
+	</dependencies>
+
 
 </project>

@@ -10,29 +10,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/**
- * 
- */
-package org.riotfamily.search.site;
+package org.riotfamily.sitesearch;
 
 import org.riotfamily.crawler.PageData;
-import org.riotfamily.pages.model.Site;
-import org.riotfamily.search.index.html.FieldExtractor;
+import org.riotfamily.search.index.Indexer;
 
-/**
- * FieldExtractor that extracts the {@link Site#getId() siteId} from the URL.
- * @author Felix Gnass [fgnass at neteye dot de]
- */
-public class SiteIdExtractor implements FieldExtractor {
+public class SiteIndexer extends Indexer {
 
 	private SiteIdentifier siteIdentifier;
 	
-	public SiteIdExtractor(SiteIdentifier siteIdentifier) {
+	public SiteIndexer(SiteIdentifier siteIdentifier) {
 		this.siteIdentifier = siteIdentifier;
 	}
 
-	public String getFieldValue(PageData pageData) {
-		Site site = siteIdentifier.getSiteForUrl(pageData.getUrl());
-		return site != null ? site.getId().toString() : null;
+	public void crawlerStarted() {
+		super.crawlerStarted();
+		siteIdentifier.updateSiteList();
 	}
+	
+	public void handlePageIncremental(PageData pageData) {
+		siteIdentifier.updateSiteList();
+		super.handlePageIncremental(pageData);
+	}
+
 }

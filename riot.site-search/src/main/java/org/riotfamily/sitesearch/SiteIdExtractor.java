@@ -13,27 +13,26 @@
 /**
  * 
  */
-package org.riotfamily.search.site;
+package org.riotfamily.sitesearch;
 
 import org.riotfamily.crawler.PageData;
 import org.riotfamily.pages.model.Site;
 import org.riotfamily.search.index.html.FieldExtractor;
 
 /**
- * FieldExtractor that extracts the the language from the site's 
- * {@link Site#getLocale() locale}.
+ * FieldExtractor that extracts the {@link Site#getId() siteId} from the URL.
  * @author Felix Gnass [fgnass at neteye dot de]
  */
-public class SiteLanguageExtractor implements FieldExtractor {
+public class SiteIdExtractor implements FieldExtractor {
 
 	private SiteIdentifier siteIdentifier;
 	
-	public SiteLanguageExtractor(SiteIdentifier siteIdentifier) {
+	public SiteIdExtractor(SiteIdentifier siteIdentifier) {
 		this.siteIdentifier = siteIdentifier;
 	}
 
 	public String getFieldValue(PageData pageData) {
 		Site site = siteIdentifier.getSiteForUrl(pageData.getUrl());
-		return site != null ? site.getLocale().getLanguage() : null;
+		return site != null ? site.getId().toString() : null;
 	}
 }

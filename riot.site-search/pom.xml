@@ -16,13 +16,13 @@
 		<dependency>
 			<groupId>org.riotfamily</groupId>
 			<artifactId>riot.search</artifactId>
-			<version>${pom.version}</version>
+			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.riotfamily</groupId>
 			<artifactId>riot.content</artifactId>
-			<version>${pom.version}</version>
+			<version>${project.version}</version>
 		</dependency>
 				
 	</dependencies>

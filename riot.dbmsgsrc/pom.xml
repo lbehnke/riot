@@ -13,26 +13,23 @@
 
 	<dependencies>
 
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.riotfamily</groupId> -->
-<!-- 			<artifactId>riot.content</artifactId> -->
-<!-- 			<version>${pom.version}</version> -->
-<!-- 			<scope>compile</scope> -->
-<!-- 		</dependency> -->
-		
-<!-- 		<dependency> -->
-<!-- 			<groupId>javax.servlet</groupId> -->
-<!-- 			<artifactId>servlet-api</artifactId> -->
-<!-- 			<scope>provided</scope> -->
-<!-- 		</dependency> -->
-		
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.apache.poi</groupId> -->
-<!-- 			<artifactId>poi</artifactId> -->
-<!-- 			<scope>compile</scope> -->
-<!-- 		</dependency> -->
+		<dependency>
+			<groupId>org.riotfamily</groupId>
+			<artifactId>riot.content</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 
+		<dependency>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.poi</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>com.springsource.javax.servlet</artifactId>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
-	
-	
+
+
 </project>

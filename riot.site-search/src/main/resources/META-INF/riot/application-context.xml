@@ -14,7 +14,7 @@
 		<!--
 		 - Service to identify sites by their URL. 
 		 -->
-		<bean id="siteIdentifer" class="org.riotfamily.search.site.SiteIdentifier">
+		<bean id="siteIdentifer" class="org.riotfamily.sitesearch.SiteIdentifier">
 			<constructor-arg ref="transactionManager" />
 		</bean>
 		
@@ -22,7 +22,7 @@
 		  - We have to replace the indexer so that we can retrieve the sites from 
 		  - the database before the crawler starts.
 		  -->
-		<override:bean ref="indexer" class="org.riotfamily.search.site.SiteIndexer" merge="true">
+		<override:bean ref="indexer" class="org.riotfamily.sitesearch.SiteIndexer" merge="true">
 			<constructor-arg ref="siteIdentifer" />
 		</override:bean>
 		
@@ -32,7 +32,7 @@
 		  -->
 		<override:properties ref="crawler">	
 			<property name="linkFilter">
-				<bean class="org.riotfamily.search.site.SiteLinkFilter">
+				<bean class="org.riotfamily.sitesearch.SiteLinkFilter">
 					<constructor-arg ref="siteIdentifer" />
 				</bean>
 			</property>
@@ -44,7 +44,7 @@
 		  -->
 		<override:properties ref="htmlIndexer">	
 			<property name="languageExtractor">
-				<bean class="org.riotfamily.search.site.SiteLanguageExtractor">
+				<bean class="org.riotfamily.sitesearch.SiteLanguageExtractor">
 					<constructor-arg ref="siteIdentifer" />
 				</bean>
 			</property>
@@ -56,7 +56,7 @@
 		  -->
 		<override:put ref="htmlIndexer" property="customFieldExtractors">
 			<entry key="siteId">
-				<bean class="org.riotfamily.search.site.SiteIdExtractor">
+				<bean class="org.riotfamily.sitesearch.SiteIdExtractor">
 					<constructor-arg ref="siteIdentifer" />
 				</bean>
 			</entry>	

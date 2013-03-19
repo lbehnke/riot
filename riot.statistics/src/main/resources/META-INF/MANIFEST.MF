@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Export-Package: org.riotfamily.statistics.commands;uses:="org.hibernat
+ e,org.riotfamily.core.screen.list.command,org.riotfamily.core.screen.
+ list.command.impl.support,org.riotfamily.statistics.web",org.riotfami
+ ly.statistics.dao;uses:="com.mchange.v2.c3p0.impl,org.hibernate,org.r
+ iotfamily.cachius,org.riotfamily.core.dao,org.riotfamily.statistics.d
+ omain,org.riotfamily.statistics.web,org.springframework.beans.factory
+ .annotation,org.springframework.core.io,org.springframework.dao",org.
+ riotfamily.statistics.domain;uses:="javax.servlet.http",org.riotfamil
+ y.statistics.runtime.i18n,org.riotfamily.statistics.runtime.resources
+ .style,org.riotfamily.statistics.runtime.resources.style.images.icons
+ ,org.riotfamily.statistics.web;uses:="javax.servlet,javax.servlet.htt
+ p,org.riotfamily.common.web.filter,org.riotfamily.statistics.domain"
+Tool: Bundlor 1.1.2.RELEASE
+Import-Library: org.springframework.spring;version="[3.0,3.5)"
+Bundle-ManifestVersion: 2
+Import-Package: com.mchange.v2.c3p0.impl;version="0.9.1.2",javax.servl
+ et;version="2.5.0",javax.servlet.http;version="2.5.0",org.hibernate;v
+ ersion="[3.2.0,3.7.0)",org.hibernate.cache.entry;version="[3.2.0,3.7.
+ 0)",org.hibernate.stat;version="[3.2.0,3.7.0)",org.riotfamily.cachius
+ ;version="9.1.0.OSGI",org.riotfamily.common.ui;version="9.1.0.OSGI",o
+ rg.riotfamily.common.util;version="9.1.0.OSGI",org.riotfamily.common.
+ web.filter;version="9.1.0.OSGI",org.riotfamily.common.web.support;ver
+ sion="9.1.0.OSGI",org.riotfamily.core.dao;version="9.1.0.OSGI",org.ri
+ otfamily.core.resource;version="9.1.0.OSGI",org.riotfamily.core.scree
+ n;version="9.1.0.OSGI",org.riotfamily.core.screen.list;version="9.1.0
+ .OSGI",org.riotfamily.core.screen.list.command;version="9.1.0.OSGI",o
+ rg.riotfamily.core.screen.list.command.impl.support;version="9.1.0.OS
+ GI",org.riotfamily.core.screen.list.command.result;version="9.1.0.OSG
+ I",org.slf4j;version="[1.6.1,1.7.0)",org.springframework.beans.factor
+ y.annotation;version="[3.0,3.5)",org.springframework.core.io;version=
+ "[3.0,3.5)",org.springframework.core.io.support;version="[3.0,3.5)",o
+ rg.springframework.dao;version="[3.0,3.5)",org.springframework.util;v
+ ersion="[3.0,3.5)"
+

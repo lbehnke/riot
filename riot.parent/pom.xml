@@ -18,8 +18,8 @@
 
 	<dependencyManagement>
 		<dependencies>
-		
-		    <!-- Home-brewed bundles -->
+
+			<!-- Home-brewed bundles -->
 			<dependency>
 				<groupId>org.riotfamily</groupId>
 				<artifactId>bundle.rhino</artifactId>
@@ -33,44 +33,44 @@
 			<dependency>
 				<groupId>org.riotfamily</groupId>
 				<artifactId>bundle.dwr</artifactId>
-				<version>3.0.0.161.dev</version>
+				<version>3.0.0.161DEV</version>
 			</dependency>
 			<dependency>
 				<groupId>org.riotfamily</groupId>
 				<artifactId>bundle.hibernate.jpa20api</artifactId>
 				<version>1.0.0.Final</version>
-			</dependency>			
+			</dependency>
 			<dependency>
 				<groupId>org.riotfamily</groupId>
 				<artifactId>bundle.hibernate.ehcache</artifactId>
 				<version>1.0.0.Final</version>
-			</dependency>			
+			</dependency>
 			<dependency>
 				<groupId>org.riotfamily</groupId>
 				<artifactId>bundle.hibernate.jpa20api</artifactId>
 				<version>3.6.0.Final</version>
-			</dependency>			
+			</dependency>
 			<dependency>
 				<groupId>org.riotfamily</groupId>
 				<artifactId>bundle.hibernate.annotations.commons</artifactId>
-				<version>3.6.0.Final</version>
-			</dependency>	
+				<version>3.2.0.Final</version> <!-- version? -->
+			</dependency>
 			<dependency>
 				<groupId>org.riotfamily</groupId>
 				<artifactId>bundle.hibernate.core</artifactId>
 				<version>3.6.0.Final</version>
-			</dependency>	
+			</dependency>
 			<dependency>
 				<groupId>org.riotfamily</groupId>
 				<artifactId>bundle.hibernate.entitymanager</artifactId>
 				<version>3.6.0.Final</version>
-			</dependency>	
+			</dependency>
 			<dependency>
 				<groupId>org.riotfamily</groupId>
 				<artifactId>bundle.asm</artifactId>
 				<version>3.3.1</version>
-			</dependency>	
-			
+			</dependency>
+
 			<!-- Spring Enterprise Bundle Repository -->
 			<dependency>
 				<groupId>org.htmlparser</groupId>
@@ -191,9 +191,9 @@
 				<!-- 2.2.3 -->
 			</dependency>
 			<dependency>
-				<groupId>org.apache.poi</groupId>
-				<artifactId>com.springsource.org.apache.poi</artifactId>
-				<version>3.0.2.FINAL</version>
+				<groupId>org.apache.servicemix.bundles</groupId>
+				<artifactId>org.apache.servicemix.bundles.poi</artifactId>
+				<version>3.6_2</version>
 				<!-- 3.5-FINAL -->
 			</dependency>
 			<dependency>
@@ -485,7 +485,6 @@
 
 	</build>
 
-
 	<modules>
 		<module>../riot.cachius</module>
 		<module>../riot.revolt</module>
@@ -502,7 +501,5 @@
 		<module>../riot.site-search</module>
 		<module>../riot.linkcheck</module>
 	</modules>
-
-
 
 </project>

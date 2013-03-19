@@ -10,27 +10,30 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.riotfamily.search.site;
+/**
+ * 
+ */
+package org.riotfamily.sitesearch;
 
 import org.riotfamily.crawler.PageData;
-import org.riotfamily.search.index.Indexer;
+import org.riotfamily.pages.model.Site;
+import org.riotfamily.search.index.html.FieldExtractor;
 
-public class SiteIndexer extends Indexer {
+/**
+ * FieldExtractor that extracts the the language from the site's 
+ * {@link Site#getLocale() locale}.
+ * @author Felix Gnass [fgnass at neteye dot de]
+ */
+public class SiteLanguageExtractor implements FieldExtractor {
 
 	private SiteIdentifier siteIdentifier;
 	
-	public SiteIndexer(SiteIdentifier siteIdentifier) {
+	public SiteLanguageExtractor(SiteIdentifier siteIdentifier) {
 		this.siteIdentifier = siteIdentifier;
 	}
 
-	public void crawlerStarted() {
-		super.crawlerStarted();
-		siteIdentifier.updateSiteList();
+	public String getFieldValue(PageData pageData) {
+		Site site = siteIdentifier.getSiteForUrl(pageData.getUrl());
+		return site != null ? site.getLocale().getLanguage() : null;
 	}
-	
-	public void handlePageIncremental(PageData pageData) {
-		siteIdentifier.updateSiteList();
-		super.handlePageIncremental(pageData);
-	}
-
 }

@@ -1,0 +1,19 @@
+Bundle-ManifestVersion: 2
+Import-Template: freemarker.*;version="[2.3.0,2.4.0)",
+ javax.activation;version="0",
+ javax.persistence;version="0",
+ javax.servlet*;version="2.5.0",
+ org.directwebremoting.*;version="[3.0.0,3.1.0)",
+ org.hibernate*;version="[3.6.0,3.7.0)",
+ org.junit*;version="[4.0.0,5.0.0)",
+ org.riotfamily.cachius*;version="${project.version}",
+ org.riotfamily.common*;version="${project.version}",
+ org.riotfamily.forms*;version="${project.version}",
+ org.riotfamily.media*;version="${project.version}",
+ org.slf4j;version="[1.6.1,1.7.0)",
+ org.springframework*;version="[3.0,3.5)"
+Import-Library: 
+ org.springframework.spring;version="[3.0,3.5)"
+Excluded-Imports: 
+ org.junit.*,
+ org.springframework.test.*

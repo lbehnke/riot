@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Export-Package: org.riotfamily.sitesearch;uses:="javax.servlet.http,or
+ g.apache.lucene.search,org.riotfamily.crawler,org.riotfamily.pages.mo
+ del,org.riotfamily.search,org.riotfamily.search.index,org.riotfamily.
+ search.index.html,org.springframework.transaction,org.springframework
+ .transaction.support",org.riotfamily.sitesearch.crawler;uses:="org.ri
+ otfamily.crawler,org.springframework.context"
+Tool: Bundlor 1.1.2.RELEASE
+Import-Library: org.springframework.spring;version="[3.0,3.5)"
+Bundle-ManifestVersion: 2
+Import-Package: javax.servlet.http;version="2.5.0",org.apache.lucene.i
+ ndex;version="2.4.1",org.apache.lucene.search;version="2.4.1",org.hib
+ ernate;version="[3.2.0,3.7.0)",org.htmlparser.util;version="1.6.0",or
+ g.riotfamily.common.hibernate;version="9.1.0.OSGI",org.riotfamily.com
+ mon.web.support;version="9.1.0.OSGI",org.riotfamily.components.event;
+ version="9.1.0.OSGI",org.riotfamily.crawler;version="9.1.0.OSGI",org.
+ riotfamily.pages.mapping;version="9.1.0.OSGI",org.riotfamily.pages.mo
+ del;version="9.1.0.OSGI",org.riotfamily.search;version="9.1.0.OSGI",o
+ rg.riotfamily.search.index;version="9.1.0.OSGI",org.riotfamily.search
+ .index.html;version="9.1.0.OSGI",org.slf4j;version="[1.6.1,1.7.0)",or
+ g.springframework.context;version="[3.0,3.5)",org.springframework.tra
+ nsaction;version="[3.0,3.5)",org.springframework.transaction.support;
+ version="[3.0,3.5)"
+
