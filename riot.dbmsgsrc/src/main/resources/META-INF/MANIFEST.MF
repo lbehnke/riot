@@ -14,6 +14,8 @@ Export-Package: org.riotfamily.dbmsgsrc;uses:="org.riotfamily.common.i
  .screen.list.command.impl.support,org.riotfamily.forms,org.riotfamily
  .forms.options,org.springframework.dao",org.riotfamily.dbmsgsrc.runti
  me
+Implementation-Vendor: riotfamily.org
+Implementation-Version: 9.1.0.OSGI
 Tool: Bundlor 1.1.2.RELEASE
 Import-Library: org.springframework.spring;version="[3.0,3.5)"
 Bundle-ManifestVersion: 2

@@ -4,6 +4,8 @@ Export-Package: org.riotfamily.crawler;uses:="javax.servlet.http,org.a
  rg.springframework.beans.factory,org.springframework.context,org.spri
  ngframework.context.event,org.springframework.web.servlet,org.springf
  ramework.web.servlet.mvc"
+Implementation-Vendor: riotfamily.org
+Implementation-Version: 9.1.0.OSGI
 Tool: Bundlor 1.1.2.RELEASE
 Import-Library: org.springframework.spring;version="[3.0,3.5)"
 Bundle-ManifestVersion: 2

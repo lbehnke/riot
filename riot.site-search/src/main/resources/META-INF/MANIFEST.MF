@@ -5,6 +5,8 @@ Export-Package: org.riotfamily.sitesearch;uses:="javax.servlet.http,or
  search.index.html,org.springframework.transaction,org.springframework
  .transaction.support",org.riotfamily.sitesearch.crawler;uses:="org.ri
  otfamily.crawler,org.springframework.context"
+Implementation-Vendor: riotfamily.org
+Implementation-Version: 9.1.0.OSGI
 Tool: Bundlor 1.1.2.RELEASE
 Import-Library: org.springframework.spring;version="[3.0,3.5)"
 Bundle-ManifestVersion: 2

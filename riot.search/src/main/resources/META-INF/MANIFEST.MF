@@ -11,6 +11,8 @@ Export-Package: org.riotfamily.search;uses:="javax.servlet.http,org.ap
  k.web.context",org.riotfamily.search.index.html;uses:="org.apache.luc
  ene.document,org.htmlparser,org.htmlparser.util,org.riotfamily.crawle
  r,org.riotfamily.search.index,org.springframework.beans.factory"
+Implementation-Vendor: riotfamily.org
+Implementation-Version: 9.1.0.OSGI
 Tool: Bundlor 1.1.2.RELEASE
 Import-Library: org.springframework.spring;version="[3.0,3.5)"
 Bundle-ManifestVersion: 2
@@ -30,11 +32,11 @@ Import-Package: javax.servlet;version="2.5.0",javax.servlet.http;versi
  .common.ui;version="9.1.0.OSGI",org.riotfamily.common.util;version="9
  .1.0.OSGI",org.riotfamily.crawler;version="9.1.0.OSGI",org.riotfamily
  .search.site;version="9.1.0.OSGI",org.slf4j;version="[1.6.1,1.7.0)",o
- rg.springframework.beans.factory;version="[3.1,3.2)",org.springframew
- ork.core.io;version="[3.1,3.2)",org.springframework.util;version="[3.
- 1,3.2)",org.springframework.web.bind;version="[3.1,3.2)",org.springfr
- amework.web.context;version="[3.1,3.2)",org.springframework.web.servl
- et;version="[3.1,3.2)",org.springframework.web.servlet.mvc;version="[
- 3.1,3.2)",org.springframework.web.servlet.support;version="[3.1,3.2)"
- ,org.springframework.web.util;version="[3.1,3.2)"
+ rg.springframework.beans.factory;version="[3.0,3.5)",org.springframew
+ ork.core.io;version="[3.0,3.5)",org.springframework.util;version="[3.
+ 0,3.5)",org.springframework.web.bind;version="[3.0,3.5)",org.springfr
+ amework.web.context;version="[3.0,3.5)",org.springframework.web.servl
+ et;version="[3.0,3.5)",org.springframework.web.servlet.mvc;version="[
+ 3.0,3.5)",org.springframework.web.servlet.support;version="[3.0,3.5)"
+ ,org.springframework.web.util;version="[3.0,3.5)"
 

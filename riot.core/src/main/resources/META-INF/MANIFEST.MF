@@ -99,6 +99,8 @@ Export-Package: org.riotfamily.core.dao;uses:="org.springframework.bea
  y.common.ui",org.riotfamily.core.view;uses:="freemarker.core,freemark
  er.template,javax.servlet.http,org.springframework.web.servlet.handle
  r"
+Implementation-Vendor: riotfamily.org
+Implementation-Version: 9.1.0.OSGI
 Tool: Bundlor 1.1.2.RELEASE
 Import-Library: org.springframework.spring;version="[3.0,3.5)"
 Bundle-ManifestVersion: 2

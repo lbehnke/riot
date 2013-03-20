@@ -24,22 +24,38 @@ Export-Package: org.riotfamily.media.cleanup;uses:="org.hibernate,org.
  riotfamily.common.beans.namespace",org.riotfamily.media.store;uses:="
  javax.servlet,org.springframework.beans.factory,org.springframework.b
  eans.factory.annotation,org.springframework.web.context"
+Implementation-Vendor: riotfamily.org
+Implementation-Version: 9.1.0.OSGI
 Tool: Bundlor 1.1.2.RELEASE
-Import-Package: javax.activation,javax.persistence,javax.servlet,javax
- .servlet.http,net.sf.json,org.hibernate,org.hibernate.annotations,org
- .hibernate.engine,org.hibernate.metadata,org.hibernate.type,org.riotf
- amily.common.beans.namespace,org.riotfamily.common.collection,org.rio
- tfamily.common.hibernate,org.riotfamily.common.io,org.riotfamily.comm
- on.scheduling,org.riotfamily.common.ui,org.riotfamily.common.util,org
- .riotfamily.common.web.mvc.mapping,org.riotfamily.common.web.support,
- org.riotfamily.core.resource,org.riotfamily.core.security,org.riotfam
- ily.core.security.auth,org.riotfamily.forms,org.riotfamily.forms.elem
- ent,org.riotfamily.forms.element.upload,org.riotfamily.forms.resource
- ,org.riotfamily.forms.ui,org.slf4j,org.springframework.beans.factory,
- org.springframework.beans.factory.annotation,org.springframework.bean
- s.factory.config,org.springframework.core.io,org.springframework.tran
- saction,org.springframework.transaction.support,org.springframework.u
- til,org.springframework.web.bind,org.springframework.web.context,org.
- springframework.web.multipart,org.springframework.web.servlet,org.spr
- ingframework.web.servlet.mvc
+Import-Library: org.springframework.spring;version="[3.0, 3.5)"
+Bundle-ManifestVersion: 2
+Import-Package: javax.activation;version="0",javax.persistence;version
+ ="0",javax.servlet;version="2.5.0",javax.servlet.http;version="2.5.0"
+ ,net.sf.json;version="[2.2.0,2.3.0)",org.hibernate;version="[3.2.0,3.
+ 7.0)",org.hibernate.annotations;version="[3.2.0,3.7.0)",org.hibernate
+ .engine;version="[3.2.0,3.7.0)",org.hibernate.metadata;version="[3.2.
+ 0,3.7.0)",org.hibernate.type;version="[3.2.0,3.7.0)",org.riotfamily.c
+ ommon.beans.namespace;version="9.1.0.OSGI",org.riotfamily.common.coll
+ ection;version="9.1.0.OSGI",org.riotfamily.common.hibernate;version="
+ 9.1.0.OSGI",org.riotfamily.common.io;version="9.1.0.OSGI",org.riotfam
+ ily.common.scheduling;version="9.1.0.OSGI",org.riotfamily.common.ui;v
+ ersion="9.1.0.OSGI",org.riotfamily.common.util;version="9.1.0.OSGI",o
+ rg.riotfamily.common.web.mvc.mapping;version="9.1.0.OSGI",org.riotfam
+ ily.common.web.support;version="9.1.0.OSGI",org.riotfamily.core.resou
+ rce;version="9.1.0.OSGI",org.riotfamily.core.security;version="9.1.0.
+ OSGI",org.riotfamily.core.security.auth;version="9.1.0.OSGI",org.riot
+ family.forms;version="9.1.0.OSGI",org.riotfamily.forms.element;versio
+ n="9.1.0.OSGI",org.riotfamily.forms.element.upload;version="9.1.0.OSG
+ I",org.riotfamily.forms.resource;version="9.1.0.OSGI",org.riotfamily.
+ forms.ui;version="9.1.0.OSGI",org.slf4j;version="[1.6.1,1.7.0)",org.s
+ pringframework.beans.factory;version="[3.0, 3.5)",org.springframework
+ .beans.factory.annotation;version="[3.0, 3.5)",org.springframework.be
+ ans.factory.config;version="[3.0, 3.5)",org.springframework.core.io;v
+ ersion="[3.0, 3.5)",org.springframework.transaction;version="[3.0, 3.
+ 5)",org.springframework.transaction.support;version="[3.0, 3.5)",org.
+ springframework.util;version="[3.0, 3.5)",org.springframework.web.bin
+ d;version="[3.0, 3.5)",org.springframework.web.context;version="[3.0,
+  3.5)",org.springframework.web.multipart;version="[3.0, 3.5)",org.spr
+ ingframework.web.servlet;version="[3.0, 3.5)",org.springframework.web
+ .servlet.mvc;version="[3.0, 3.5)"
 

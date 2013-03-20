@@ -11,6 +11,8 @@ Export-Package: org.riotfamily.cachius;uses:="org.riotfamily.cachius.i
  hius.invalidation;uses:="org.riotfamily.cachius",org.riotfamily.cachi
  us.persistence
 Bundle-Vendor: riotfamily.org
+Implementation-Vendor: riotfamily.org
+Implementation-Version: 9.1.0.OSGI
 Bundle-ClassPath: .
 Bundle-Version: 9.1.0.OSGI
 Tool: Bundlor 1.1.2.RELEASE

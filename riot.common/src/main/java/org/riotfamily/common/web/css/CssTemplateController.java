@@ -203,7 +203,7 @@ public class CssTemplateController extends AbstractCacheableController
 
 		public long lastModified() {
 			long lastModified = -1;
-			if (file != null) {
+			if (file != null && file.exists()) {
 				lastModified = file.lastModified();
 			}
 			if (iniFile != null) {

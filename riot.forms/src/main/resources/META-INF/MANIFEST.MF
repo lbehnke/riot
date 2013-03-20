@@ -42,30 +42,34 @@ Export-Package: org.riotfamily.forms;uses:="freemarker.template,javax.
  "javax.servlet.http,org.springframework.web.multipart",org.riotfamily
  .forms.resource,org.riotfamily.forms.runtime.resources,org.riotfamily
  .forms.runtime.resources.colorPicker,org.riotfamily.forms.ui
+Implementation-Vendor: riotfamily.org
+Implementation-Version: 9.1.0.OSGI
 Tool: Bundlor 1.1.2.RELEASE
-Import-Package: com.sun.corba.se.spi.legacy.connection,freemarker.cach
- e;version="[2.3.0,2.4.0)",freemarker.template;version="[2.3.0,2.4.0)"
- ,javax.activation;version="0",javax.servlet;version="[2.5.0,3.0.0)",j
- avax.servlet.http;version="[2.5.0,3.0.0)",net.sf.json;version="[2.2.0
- ,2.3.0)",org.riotfamily.common.beans.property;version="9.1.0.OSGI",or
- g.riotfamily.common.beans.reload;version="9.1.0.OSGI",org.riotfamily.
- common.freemarker;version="9.1.0.OSGI",org.riotfamily.common.i18n;ver
- sion="9.1.0.OSGI",org.riotfamily.common.ui;version="9.1.0.OSGI",org.r
- iotfamily.common.util;version="9.1.0.OSGI",org.riotfamily.common.web.
- support;version="9.1.0.OSGI",org.riotfamily.common.xml;version="9.1.0
- .OSGI",org.slf4j;version="[1.6.0)",org.springframework.beans;version=
- "3.1.0.RELEASE",org.springframework.beans.factory;version="3.1.0.RELE
- ASE",org.springframework.beans.factory.config;version="3.1.0.RELEASE"
- ,org.springframework.beans.factory.support;version="3.1.0.RELEASE",or
- g.springframework.beans.propertyeditors;version="3.1.0.RELEASE",org.s
- pringframework.context;version="3.1.0.RELEASE",org.springframework.co
- ntext.support;version="3.1.0.RELEASE",org.springframework.core;versio
- n="3.1.0.RELEASE",org.springframework.core.io;version="3.1.0.RELEASE"
- ,org.springframework.util;version="3.1.0.RELEASE",org.springframework
- .util.xml;version="3.1.0.RELEASE",org.springframework.validation;vers
- ion="3.1.0.RELEASE",org.springframework.web.multipart;version="3.1.0.
- RELEASE",org.springframework.web.servlet;version="3.1.0.RELEASE",org.
- springframework.web.servlet.mvc;version="3.1.0.RELEASE",org.springfra
- mework.web.servlet.support;version="3.1.0.RELEASE",org.w3c.dom;versio
- n="0"
+Import-Library: org.springframework.spring;version="[3.0, 3.5)"
+Bundle-ManifestVersion: 2
+Import-Package: com.sun.corba.se.spi.legacy.connection;version="0",fre
+ emarker.cache;version="[2.3.0,2.4.0)",freemarker.template;version="[2
+ .3.0,2.4.0)",javax.activation;version="0",javax.servlet;version="[2.5
+ .0,3.0.0)",javax.servlet.http;version="[2.5.0,3.0.0)",net.sf.json;ver
+ sion="[2.2.0,2.3.0)",org.riotfamily.common.beans.property;version="9.
+ 1.0.OSGI",org.riotfamily.common.beans.reload;version="9.1.0.OSGI",org
+ .riotfamily.common.freemarker;version="9.1.0.OSGI",org.riotfamily.com
+ mon.i18n;version="9.1.0.OSGI",org.riotfamily.common.ui;version="9.1.0
+ .OSGI",org.riotfamily.common.util;version="9.1.0.OSGI",org.riotfamily
+ .common.web.support;version="9.1.0.OSGI",org.riotfamily.common.xml;ve
+ rsion="9.1.0.OSGI",org.slf4j;version="[1.6.0,1.7.0)",org.springframew
+ ork.beans;version="3.1.0.RELEASE",org.springframework.beans.factory;v
+ ersion="3.1.0.RELEASE",org.springframework.beans.factory.config;versi
+ on="3.1.0.RELEASE",org.springframework.beans.factory.support;version=
+ "3.1.0.RELEASE",org.springframework.beans.propertyeditors;version="3.
+ 1.0.RELEASE",org.springframework.context;version="3.1.0.RELEASE",org.
+ springframework.context.support;version="3.1.0.RELEASE",org.springfra
+ mework.core;version="3.1.0.RELEASE",org.springframework.core.io;versi
+ on="3.1.0.RELEASE",org.springframework.util;version="3.1.0.RELEASE",o
+ rg.springframework.util.xml;version="3.1.0.RELEASE",org.springframewo
+ rk.validation;version="3.1.0.RELEASE",org.springframework.web.multipa
+ rt;version="3.1.0.RELEASE",org.springframework.web.servlet;version="3
+ .1.0.RELEASE",org.springframework.web.servlet.mvc;version="3.1.0.RELE
+ ASE",org.springframework.web.servlet.support;version="3.1.0.RELEASE",
+ org.w3c.dom;version="0"
 

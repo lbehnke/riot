@@ -1,3 +1,5 @@
+Implementation-Version: ${project.version}
+Implementation-Vendor: riotfamily.org
 Bundle-ManifestVersion: 2
 Import-Template: freemarker.*;version="[2.3.0,2.4.0)",
  javax.activation;version="0",

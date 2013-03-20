@@ -35,6 +35,13 @@
 				<artifactId>bundle.dwr</artifactId>
 				<version>3.0.0.161DEV</version>
 			</dependency>
+
+
+
+
+
+
+
 			<dependency>
 				<groupId>org.riotfamily</groupId>
 				<artifactId>bundle.hibernate.jpa20api</artifactId>
@@ -53,7 +60,7 @@
 			<dependency>
 				<groupId>org.riotfamily</groupId>
 				<artifactId>bundle.hibernate.annotations.commons</artifactId>
-				<version>3.2.0.Final</version> <!-- version? -->
+				<version>3.2.0.Final</version>
 			</dependency>
 			<dependency>
 				<groupId>org.riotfamily</groupId>
@@ -64,6 +71,11 @@
 				<groupId>org.riotfamily</groupId>
 				<artifactId>bundle.hibernate.entitymanager</artifactId>
 				<version>3.6.0.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.persistence</groupId>
+				<artifactId>com.springsource.javax.persistence</artifactId>
+				<version>2.0.0</version>
 			</dependency>
 			<dependency>
 				<groupId>org.riotfamily</groupId>

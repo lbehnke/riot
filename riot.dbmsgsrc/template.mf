@@ -1,3 +1,5 @@
+Implementation-Version: ${project.version}
+Implementation-Vendor: riotfamily.org
 Bundle-ManifestVersion: 2
 Import-Template: javax.persistence;version="1.0.0.Final",
  javax.servlet*;version="2.5.0",

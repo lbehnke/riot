@@ -82,5 +82,8 @@ Export-Package: org.riotfamily.resources.jscalendar,org.riotfamily.res
  nymce.themes.simple.skins.default,org.riotfamily.resources.tinymce.th
  emes.simple.skins.o2k7,org.riotfamily.resources.tinymce.themes.simple
  .skins.o2k7.img,org.riotfamily.resources.tinymce.utils
+Implementation-Vendor: riotfamily.org
+Implementation-Version: 9.1.0.OSGI
 Tool: Bundlor 1.1.2.RELEASE
+Bundle-ManifestVersion: 2
 

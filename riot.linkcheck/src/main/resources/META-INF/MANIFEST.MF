@@ -9,6 +9,8 @@ Export-Package: org.riotfamily.linkcheck;uses:="javax.persistence,org.
  ime.resources,org.riotfamily.linkcheck.runtime.resources.style,org.ri
  otfamily.linkcheck.runtime.resources.style.icons.editors,org.riotfami
  ly.linkcheck.runtime.resources.style.images
+Implementation-Vendor: riotfamily.org
+Implementation-Version: 9.1.0.OSGI
 Tool: Bundlor 1.1.2.RELEASE
 Import-Library: org.springframework.spring;version="[3.0,3.5)"
 Bundle-ManifestVersion: 2
