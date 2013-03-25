@@ -290,7 +290,7 @@ public final class FormatUtils {
 		}
 		s = s.replaceAll("[.\\s/]", "-");
 		s = s.replaceAll("[^\\w-_]", "");
-		return s;
+		return s.toLowerCase();
 	}
 
 	/**
