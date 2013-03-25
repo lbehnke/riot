@@ -13,6 +13,7 @@
 package org.riotfamily.forms.element;
 
 import java.io.PrintWriter;
+import java.io.Serializable;
 import java.util.regex.Pattern;
 
 import org.riotfamily.common.util.DocumentWriter;
@@ -25,7 +26,9 @@ import org.springframework.util.StringUtils;
 /**
  * A text input field.
  */
-public class TextField extends AbstractTextElement {
+public class TextField extends AbstractTextElement implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 
 	private static final String CONFIRM_SUFFIX = "-confirm";
 	

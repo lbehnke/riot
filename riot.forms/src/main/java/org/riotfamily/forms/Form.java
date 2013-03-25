@@ -13,6 +13,7 @@
 package org.riotfamily.forms;
 
 import java.io.PrintWriter;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -49,7 +50,9 @@ import org.springframework.validation.Validator;
 /**
  * Serverside representation of a HTML form.
  */
-public class Form implements BeanEditor {
+public class Form implements BeanEditor, Serializable {
+
+	private static final long serialVersionUID = 1L;
 
 	private static final String DEFAULT_ID = "f0";
 

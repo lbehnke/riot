@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>riot.core</artifactId>
-	<packaging>jar</packaging>
+	<packaging>bundle</packaging>
 	<name>Riot Core</name>
 	<parent>
 		<groupId>org.riotfamily</groupId>
@@ -57,8 +57,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.riotfamily</groupId>
-			<artifactId>bundle.dwr</artifactId>
+			<groupId>com.apporiented.osgi</groupId>
+			<artifactId>bundle.dwr.yui.rhino</artifactId>
 		</dependency>
 
 
@@ -80,5 +80,22 @@
 		</dependency>
 	</dependencies>
 
-
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>2.3.4</version>
+				<extensions>true</extensions>
+				<configuration>
+                    <instructions>
+                        <Import-Package>
+                            !org.riotfamily.core*,
+                            *
+                        </Import-Package>
+                    </instructions>
+                </configuration>				
+			</plugin>
+		</plugins>
+	</build>
 </project>
