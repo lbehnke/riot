@@ -89,10 +89,10 @@
 				<extensions>true</extensions>
 				<configuration>
                     <instructions>
-                        <Import-Package>
-                            !org.riotfamily.core*,
-                            *
-                        </Import-Package>
+                    	<!-- Package impl must be exported, too -->
+                    	<Export-Package>
+                    	org.riotfamily.core*
+                    	</Export-Package>
                     </instructions>
                 </configuration>				
 			</plugin>
