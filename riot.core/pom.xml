@@ -15,17 +15,7 @@
 
 		<dependency>
 			<groupId>org.riotfamily</groupId>
-			<artifactId>riot.common</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.riotfamily</groupId>
 			<artifactId>riot.cachius</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.riotfamily</groupId>
-			<artifactId>riot.forms</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
@@ -33,32 +23,148 @@
 			<artifactId>riot.revolt</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-
-
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>org.springframework.web</artifactId>
-			<scope>compile</scope>
+			<groupId>org.riotfamily</groupId>
+			<artifactId>riot.jslibs</artifactId>
+			<version>${project.version}</version>
+			<scope>runtime</scope>
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>org.springframework.web.servlet</artifactId>
-			<scope>compile</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>com.springsource.javax.servlet</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.freemarker</groupId>
-			<artifactId>com.springsource.freemarker</artifactId>
+			<groupId>com.apporiented.osgi</groupId>
+			<artifactId>bundle.c3p0</artifactId>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>com.apporiented.osgi</groupId>
 			<artifactId>bundle.dwr.yui.rhino</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.apporiented.osgi</groupId>
+			<artifactId>bundle.hibernate</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>com.springsource.slf4j.api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.dom4j</groupId>
+			<artifactId>com.springsource.org.dom4j</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.orm</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.web</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.web.servlet</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.context.support</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>com.springsource.org.apache.commons.fileupload</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>com.springsource.javax.persistence</artifactId>
+			<scope>provided</scope>
+		</dependency>		
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.riotfamily</groupId> -->
+<!-- 			<artifactId>bundle.hibernate.jpa20api</artifactId> -->
+<!-- 		</dependency> -->
+		
+		
+		<dependency>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.poi</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>				
+			</exclusions>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>com.springsource.com.thoughtworks.xstream</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>com.springsource.freemarker</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.json</groupId>
+			<artifactId>com.springsource.net.sf.json</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.opensymphony.quartz</groupId>
+			<artifactId>com.springsource.org.quartz</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>com.springsource.javax.servlet</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.apporiented.osgi</groupId>
+			<artifactId>bundle.dwr.yui.rhino</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>com.springsource.javax.mail</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>com.springsource.javax.servlet</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>com.springsource.org.apache.commons.io</artifactId>
+			<scope>provided</scope>
 		</dependency>
 
 
@@ -89,10 +195,24 @@
 				<extensions>true</extensions>
 				<configuration>
                     <instructions>
+                    	<Import-Package>
+                    	org.springframework*;version="[3.1.0.RELEASE,3.1.0.RELEASE]",
+                    	*
+                    	</Import-Package>
                     	<!-- Package impl must be exported, too -->
                     	<Export-Package>
-                    	org.riotfamily.core*
+                    	org.riotfamily.common*,
+                    	org.riotfamily.components*,
+                    	org.riotfamily.core*,
+                    	org.riotfamily.dbmsgsrc*,
+                    	org.riotfamily.forms*,
+                    	org.riotfamily.media*,
+                    	org.riotfamily.pages*
                     	</Export-Package>
+						<Import-Library>
+						    org.springframework.spring;version="[3.1.0.RELEASE,3.1.0.RELEASE]"
+						</Import-Library>   
+						<Bundle-BuddyPolicy>registered</Bundle-BuddyPolicy>                 	
                     </instructions>
                 </configuration>				
 			</plugin>

@@ -18,15 +18,51 @@
 			<artifactId>riot.core</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.riotfamily</groupId>
 			<artifactId>riot.crawler</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.apporiented.osgi</groupId>
+			<artifactId>bundle.hibernate</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.apporiented.osgi</groupId>
+			<artifactId>bundle.dwr.yui.rhino</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>com.springsource.javax.persistence</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>com.springsource.org.apache.commons.httpclient</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.core</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.orm</artifactId>
+			<scope>provided</scope>
+		</dependency>
+				
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -34,7 +70,20 @@
 				<artifactId>maven-bundle-plugin</artifactId>
 				<version>2.3.4</version>
 				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Import-Package>
+							org.springframework*;version="[3.1.0.RELEASE,3.1.0.RELEASE]",
+							*
+						</Import-Package>
+						<!-- Package impl must be exported, too -->
+						<Export-Package>
+							org.riotfamily.linkcheck*
+						</Export-Package>
+						<Bundle-BuddyPolicy>registered</Bundle-BuddyPolicy>		
+					</instructions>
+				</configuration>
 			</plugin>
 		</plugins>
-	</build>	
+	</build>
 </project>

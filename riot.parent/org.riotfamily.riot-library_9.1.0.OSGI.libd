@@ -1,0 +1,18 @@
+Library-SymbolicName: org.riotfamily.riot
+Library-Version: 9.1.0.OSGI
+Library-Name: Riot Framework
+Import-Bundle: 
+ org.riotfamily.riot.cachius;version="[9.1.0.OSGI, 9.1.0.OSGI]",
+ org.riotfamily.riot.common;version="[9.1.0.OSGI, 9.1.0.OSGI]",
+ org.riotfamily.riot.core;version="[9.1.0.OSGI, 9.1.0.OSGI]",
+ org.riotfamily.riot.content;version="[9.1.0.OSGI, 9.1.0.OSGI]",
+ org.riotfamily.riot.crawler;version="[9.1.0.OSGI, 9.1.0.OSGI]",
+ org.riotfamily.riot.dbmsgsrc;version="[9.1.0.OSGI, 9.1.0.OSGI]",
+ org.riotfamily.riot.forms;version="[9.1.0.OSGI, 9.1.0.OSGI]",
+ org.riotfamily.riot.linkcheck;version="[9.1.0.OSGI, 9.1.0.OSGI]",
+ org.riotfamily.riot.media;version="[9.1.0.OSGI, 9.1.0.OSGI]",
+ org.riotfamily.riot.revolt;version="[9.1.0.OSGI, 9.1.0.OSGI]",
+ org.riotfamily.riot.search;version="[9.1.0.OSGI, 9.1.0.OSGI]",
+ org.riotfamily.riot.sitesearch;version="[9.1.0.OSGI, 9.1.0.OSGI]",
+ org.riotfamily.riot.statistics;version="[9.1.0.OSGI, 9.1.0.OSGI]",
+

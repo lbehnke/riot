@@ -23,7 +23,7 @@ import org.directwebremoting.annotations.RemoteMethod;
 import org.directwebremoting.annotations.RemoteProxy;
 import org.riotfamily.common.i18n.MessageResolver;
 import org.riotfamily.common.ui.ObjectRenderer;
-import org.riotfamily.common.web.mvc.mapping.HandlerUrlResolver;
+import org.riotfamily.common.web.mvc.mapping.HandlerUrlResolverIntf;
 import org.riotfamily.core.screen.ScreenRepository;
 import org.riotfamily.core.screen.list.ColumnConfig;
 import org.riotfamily.core.screen.list.command.CommandResult;
@@ -52,7 +52,7 @@ public class ListService {
 		
 	private FormContextFactory formContextFactory;
 	
-	private HandlerUrlResolver handlerUrlResolver;
+	private HandlerUrlResolverIntf handlerUrlResolver;
 	
 	private String resourcePath;
 	
@@ -61,7 +61,7 @@ public class ListService {
 	public ListService(PlatformTransactionManager transactionManager,
 			ScreenRepository screenRepository,
 			FormContextFactory formContextFactory,
-			HandlerUrlResolver handlerUrlResolver, 
+			HandlerUrlResolverIntf handlerUrlResolver, 
 			String resourcePath) {
 		
 		this.transactionManager = transactionManager;
@@ -80,7 +80,7 @@ public class ListService {
 		return formContextFactory;
 	}
 	
-	public HandlerUrlResolver getHandlerUrlResolver() {
+	public HandlerUrlResolverIntf getHandlerUrlResolver() {
 		return handlerUrlResolver;
 	}
 	

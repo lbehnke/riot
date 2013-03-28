@@ -27,43 +27,43 @@
 			</dependency>
 
 
-<!-- 			<dependency> -->
-<!-- 				<groupId>org.riotfamily</groupId> -->
-<!-- 				<artifactId>bundle.hibernate.jpa20api</artifactId> -->
-<!-- 				<version>1.0.0.Final</version> -->
-<!-- 			</dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>org.riotfamily</groupId> -->
+			<!-- <artifactId>bundle.hibernate.jpa20api</artifactId> -->
+			<!-- <version>1.0.0.Final</version> -->
+			<!-- </dependency> -->
 			<dependency>
 				<groupId>com.apporiented.osgi</groupId>
 				<artifactId>bundle.hibernate</artifactId>
 				<version>1.0.0.DEV</version>
 			</dependency>
 
-<!-- 			<dependency> -->
-<!-- 				<groupId>org.riotfamily</groupId> -->
-<!-- 				<artifactId>bundle.hibernate.annotations.commons</artifactId> -->
-<!-- 				<version>3.2.0.Final</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>org.riotfamily</groupId> -->
-<!-- 				<artifactId>bundle.hibernate.core</artifactId> -->
-<!-- 				<version>3.6.0.Final</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>org.riotfamily</groupId> -->
-<!-- 				<artifactId>bundle.hibernate.entitymanager</artifactId> -->
-<!-- 				<version>3.6.0.Final</version> -->
-<!-- 			</dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>org.riotfamily</groupId> -->
+			<!-- <artifactId>bundle.hibernate.annotations.commons</artifactId> -->
+			<!-- <version>3.2.0.Final</version> -->
+			<!-- </dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>org.riotfamily</groupId> -->
+			<!-- <artifactId>bundle.hibernate.core</artifactId> -->
+			<!-- <version>3.6.0.Final</version> -->
+			<!-- </dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>org.riotfamily</groupId> -->
+			<!-- <artifactId>bundle.hibernate.entitymanager</artifactId> -->
+			<!-- <version>3.6.0.Final</version> -->
+			<!-- </dependency> -->
 
 			<dependency>
 				<groupId>javax.persistence</groupId>
 				<artifactId>com.springsource.javax.persistence</artifactId>
 				<version>2.0.0</version>
 			</dependency>
-<!-- 			<dependency> -->
-<!-- 				<groupId>org.riotfamily</groupId> -->
-<!-- 				<artifactId>bundle.asm</artifactId> -->
-<!-- 				<version>3.3.1</version> -->
-<!-- 			</dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>org.riotfamily</groupId> -->
+			<!-- <artifactId>bundle.asm</artifactId> -->
+			<!-- <version>3.3.1</version> -->
+			<!-- </dependency> -->
 
 			<!-- Spring Enterprise Bundle Repository -->
 			<dependency>
@@ -81,7 +81,7 @@
 				<artifactId>com.springsource.org.apache.commons.io</artifactId>
 				<version>1.4.0</version>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>com.springsource.org.apache.commons.httpclient</artifactId>
@@ -108,9 +108,9 @@
 				<version>1.1.0</version>
 			</dependency>
 			<dependency>
-				<groupId>com.mchange.c3p0</groupId>
-				<artifactId>com.springsource.com.mchange.v2.c3p0</artifactId>
-				<version>0.9.1.2</version>
+				<groupId>com.apporiented.osgi</groupId>
+				<artifactId>bundle.c3p0</artifactId>
+				<version>1.0.0.DEV</version>
 			</dependency>
 			<dependency>
 				<groupId>org.junit</groupId>
@@ -185,12 +185,18 @@
 				<version>2.2.2</version>
 				<!-- 2.2.3 -->
 			</dependency>
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.apache.poi</groupId> -->
+<!-- 				<artifactId>com.springsource.org.apache.poi</artifactId> -->
+<!-- 				<version>3.9.0.FINAL</version> -->
+<!-- 			</dependency> -->
 			<dependency>
 				<groupId>org.apache.servicemix.bundles</groupId>
 				<artifactId>org.apache.servicemix.bundles.poi</artifactId>
 				<version>3.6_2</version>
 				<!-- 3.5-FINAL -->
 			</dependency>
+			
 			<dependency>
 				<groupId>org.apache.lucene</groupId>
 				<artifactId>com.springsource.org.apache.lucene.analysis</artifactId>
@@ -359,9 +365,9 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<configuration>
-					<outputDirectory>${project.build.directory}/dependencies</outputDirectory>
+					<outputDirectory>${user.home}/.bundles</outputDirectory>
 					<overWriteIfNewer>true</overWriteIfNewer>
-					<excludeGroupIds>org.riotfamily,org.apache.log4j,log4j,javax.mail,javax.servlet</excludeGroupIds>
+					<excludeGroupIds>org.apache.log4j,log4j,javax.mail,javax.servlet</excludeGroupIds>
 				</configuration>
 				<executions>
 					<execution>
@@ -374,23 +380,23 @@
 				</executions>
 			</plugin>
 
-<!-- 			<plugin> -->
-<!-- 				<groupId>com.springsource.bundlor</groupId> -->
-<!-- 				<artifactId>com.springsource.bundlor.maven</artifactId> -->
-<!-- 				<version>1.0.0.RELEASE</version> -->
-<!-- 				<executions> -->
-<!-- 					<execution> -->
-<!-- 						<id>bundlor</id> -->
-<!-- 						<goals> -->
-<!-- 							<goal>bundlor</goal> -->
-<!-- 						</goals> -->
-<!-- 						<phase>package</phase> -->
-<!-- 					</execution> -->
-<!-- 				</executions> -->
-<!-- 				<configuration> -->
-<!-- 					<failOnWarnings>true</failOnWarnings> -->
-<!-- 				</configuration> -->
-<!-- 			</plugin> -->
+			<!-- <plugin> -->
+			<!-- <groupId>com.springsource.bundlor</groupId> -->
+			<!-- <artifactId>com.springsource.bundlor.maven</artifactId> -->
+			<!-- <version>1.0.0.RELEASE</version> -->
+			<!-- <executions> -->
+			<!-- <execution> -->
+			<!-- <id>bundlor</id> -->
+			<!-- <goals> -->
+			<!-- <goal>bundlor</goal> -->
+			<!-- </goals> -->
+			<!-- <phase>package</phase> -->
+			<!-- </execution> -->
+			<!-- </executions> -->
+			<!-- <configuration> -->
+			<!-- <failOnWarnings>true</failOnWarnings> -->
+			<!-- </configuration> -->
+			<!-- </plugin> -->
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -398,13 +404,13 @@
 
 				<!-- Downgrade because of sonatype / m2eclipse issue #10 -->
 				<version>2.3.2</version>
-<!-- 				<configuration> -->
-<!-- 					<archive> -->
-<!-- 						<manifestFile> -->
-<!-- 							src/main/resources/META-INF/MANIFEST.MF -->
-<!-- 						</manifestFile> -->
-<!-- 					</archive> -->
-<!-- 				</configuration> -->
+				<!-- <configuration> -->
+				<!-- <archive> -->
+				<!-- <manifestFile> -->
+				<!-- src/main/resources/META-INF/MANIFEST.MF -->
+				<!-- </manifestFile> -->
+				<!-- </archive> -->
+				<!-- </configuration> -->
 			</plugin>
 
 			<plugin>
@@ -483,13 +489,8 @@
 	<modules>
 		<module>../riot.cachius</module>
 		<module>../riot.revolt</module>
-		<module>../riot.common</module>
 		<module>../riot.jslibs</module>
-		<module>../riot.forms</module>
 		<module>../riot.core</module>
-		<module>../riot.media</module>
-		<module>../riot.content</module>
-		<module>../riot.dbmsgsrc</module>
 		<module>../riot.statistics</module>
 		<module>../riot.crawler</module>
 		<module>../riot.search</module>

@@ -15,10 +15,12 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>com.springsource.slf4j.api</artifactId>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>org.springframework.jdbc</artifactId>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
@@ -29,6 +31,19 @@
 				<artifactId>maven-bundle-plugin</artifactId>
 				<version>2.3.4</version>
 				<extensions>true</extensions>
+				<configuration>
+                    <instructions>
+                    	<Import-Package>
+                    	org.springframework*;version="[3.1.0.RELEASE,3.1.0.RELEASE]",
+                    	*
+                    	</Import-Package>
+                    	<!-- Package impl must be exported, too -->
+                    	<Export-Package>
+                    	org.riotfamily.revolt*
+                    	</Export-Package>
+                    	<Bundle-BuddyPolicy>registered</Bundle-BuddyPolicy>		
+                    </instructions>
+                </configuration>						
 			</plugin>
 		</plugins>
 	</build>
